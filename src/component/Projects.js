@@ -7,18 +7,18 @@ class Projects extends Component {
   render() {
     return (
       <section id="projetos">
-        <h2>Projetos</h2>
+        <h1>Projetos</h1>
         {/* <a href="https://trybe-wallet-eta.vercel.app/">TrybeWallet</a>
           <a href="https://trybe-tunes-blond.vercel.app/">TrybeTunes</a>
           <a href="https://todo-list-ecru-nine.vercel.app/">To-do list</a> */}
         <div>
-          <a href="https://trybe-wallet-eta.vercel.app/" target="_blank" class="ext" rel="noreferrer" >
+          <a href="https://trybe-wallet-eta.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={trybewalletImg} alt="imagem trybewallet" />
           </a>
-          <a href="https://trybe-tunes-blond.vercel.app/" target="_blank" class="ext" rel="noreferrer" >
+          <a href="https://trybe-tunes-blond.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={trybetunesImg} alt="imagem trybetunes" />
           </a>
-          <a href="https://todo-list-ecru-nine.vercel.app/" target="_blank" class="ext" rel="noreferrer" >
+          <a href="https://todo-list-ecru-nine.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={todolistImg} alt="imagem todolist" />
           </a>
         </div>

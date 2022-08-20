@@ -5,7 +5,7 @@ class About extends Component {
     return (
 <section id="sobreMim">
     <article>
-        <h2>Sobre mim</h2>
+        <h1>Sobre mim</h1>
         <p>
             Me chamo Lucas Ribeiro Moura, moro em Belo Horizonte (Minas Gerais, Brasil), sou formado em
             Administração de Empresas, e atualmente estudante em Desenvolvimento Web na Trybe!
@@ -24,7 +24,7 @@ class About extends Component {
         </p>
     </article>
         <div className="tecnologias">
-            <h2>Tecnologias</h2>
+            <h1>Tecnologias</h1>
             <div className="spans">
                 <span>HTML</span>
                 <span>CSS</span>
