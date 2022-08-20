@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import lucasImg from '../imgs/Foto.jpeg'
+import curriculo from '../imgs/curriculo.pdf'
+
 
 class Personal extends Component {
   render() {
@@ -9,7 +11,8 @@ class Personal extends Component {
         <div className='input'>
           <h1 className="line-1 anim-typewriter">Lucas Moura, desenvolvedor Web.</h1>
           </div>
-          <button> Currículo </button>
+          <a href={curriculo} target="_blank" class="ext" rel="noreferrer">Currículo</a>
+
   </section>
     );
   }
