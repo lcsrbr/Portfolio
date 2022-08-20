@@ -9,7 +9,7 @@ class Personal extends Component {
       <section className='personal' id="personal">
         <img src={lucasImg} alt="foto " />
         <div className='input'>
-          <h1 className="line-1 anim-typewriter">Lucas Moura, desenvolvedor Web.</h1>
+          <h1 className="line-1 anim-typewriter">Lucas Moura, Desenvolvedor Web.</h1>
           </div>
           <a href={curriculo} target="_blank" class="ext" rel="noreferrer">Currículo</a>
 
