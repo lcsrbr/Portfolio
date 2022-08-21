@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import trybewalletImg from '../imgs/trybewallet.png'
 import trybetunesImg from '../imgs/trybetunes.png'
 import todolistImg from '../imgs/todolist.png'
+import triviaImg from '../imgs/trivia.png'
+
 
 class Projects extends Component {
   render() {
@@ -18,8 +20,12 @@ class Projects extends Component {
           <a href="https://trybe-tunes-blond.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={trybetunesImg} alt="imagem trybetunes" />
           </a>
+          <br/>
           <a href="https://todo-list-ecru-nine.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={todolistImg} alt="imagem todolist" />
+          </a>
+          <a href="https://trivia-kugpvnmf2-lcsrbr.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
+          <img src={triviaImg} alt="imagem trivia" />
           </a>
         </div>
       </section>

@@ -224,7 +224,6 @@ nav div {
   width: 100%;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  justify-content: center;
   flex-direction: column;
   color: antiquewhite;
 }
@@ -238,7 +237,7 @@ nav div {
 }
 
 #projetos img:hover {
-  width: 28%;
+  transform: translateY(-7px);
 }
 
 /* PROJECT */
