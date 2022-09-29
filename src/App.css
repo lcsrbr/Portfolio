@@ -60,7 +60,7 @@ nav div {
 
 .personal img {
   border-radius: 50%;
-  width: 15%;
+  width: 10%;
 }
 
 /* From uiverse.io */
@@ -159,23 +159,38 @@ nav div {
   background-color: #222425;
   height: 600px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   color: antiquewhite;
   align-items: center;
+}
+
+.sobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: antiquewhite;
+  align-items: center;
+  gap: 2rem;
 }
 
  h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2em;
 } 
-#sobreMim p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 #sobreMim article {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+flex-direction: column;
   text-align: justify;
   width: 40%;
   font-size: 100%;
+}
+
+#sobreMim img {
+  width: 250px;
+  border-radius: 50%;
 }
 
 .tecnologias {
