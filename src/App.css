@@ -61,7 +61,7 @@ nav div {
 }
 
 .personal img {
-  border-radius: 50%;
+  border-radius: 10%;
   width: 10%;
 }
 
@@ -74,7 +74,7 @@ nav div {
   text-decoration: none;
   height: 30px;
   width: 150px;
-  border-radius: 45px;
+  border-radius: 15px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   background-color: #fff;
@@ -112,7 +112,7 @@ nav div {
   background-color: white;
   width: 38em;
   height: 2em;
-  border-radius: 45px;
+  border-radius: 15px;
 }
 
 .line-1 {
@@ -193,7 +193,7 @@ flex-direction: column;
 
 #sobreMim img {
   width: 25%;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .tecnologias {
@@ -207,7 +207,7 @@ flex-direction: column;
   justify-content: center;
   height: 30px;
   width: 150px;
-  border-radius: 45px;
+  border-radius: 15px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: #3a344b;
@@ -240,24 +240,47 @@ flex-direction: column;
   background-color: #353B3C;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
-  flex-direction: column;
   color: #e2dbff;
   padding-bottom: 50px;
 }
 
-#projetos img {
+
+#projetos div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#projetos div a {
   width: 25%;
-  border-radius: 45px;
-  padding: 5px;
+}
+#projetos div img {
+  width: 100%;
+  border-radius: 15px;
   transition-duration: 0.2s;
 
 }
+/* 
+#projetos div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-#projetos img:hover {
+#projetos a {
+height: 100px;
+}
+
+#projetos img {
+} */
+
+
+#projetos div img:hover {
   transform: translateY(-7px);
 }
 
@@ -297,7 +320,7 @@ flex-direction: column;
   text-decoration: none;
   height: 30px;
   width: 150px;
-  border-radius: 45px;
+  border-radius: 15px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   background-color: #fff;
@@ -333,7 +356,7 @@ form textarea {
 
 form input {
   background-color: white;
-  border-radius: 45px;
+  border-radius: 15px;
   border: none;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
@@ -358,7 +381,7 @@ form button {
   justify-content: center;
   text-decoration: none;
   height: 30px;
-  border-radius: 45px;
+  border-radius: 15px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   background-color: #fff;
@@ -404,7 +427,7 @@ footer {
   .input {
     width: 40vh;
     height: 1em;
-    border-radius: 45px;
+    border-radius: 15px;
   }
   .personal img {
     width: 30%;
@@ -444,4 +467,22 @@ footer {
     width: auto;
     padding: 15px;
     }
-}
+    #projetos {
+      align-items: center;
+      /* height: auto;
+      display: flex;
+      flex-direction: column; */
+    }
+
+    #projetos div {
+      gap: 0.5rem;
+      align-items: center;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #projetos div a {
+      width: 80%;
+    }
+
+  }

@@ -20,7 +20,6 @@ class Projects extends Component {
           <a href="https://trybe-tunes-blond.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={trybetunesImg} alt="imagem trybetunes" />
           </a>
-          <br/>
           <a href="https://todo-list-ecru-nine.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={todolistImg} alt="imagem todolist" />
           </a>
