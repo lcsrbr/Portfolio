@@ -420,7 +420,7 @@ footer {
 
 /* FOOTER */
 
-@media (min-width: 200px ) and (max-width: 1000px) {
+@media (min-width: 200px ) and (max-width: 600px) {
   .headerNav {
     visibility: hidden;
   }
@@ -454,6 +454,82 @@ footer {
   }
   #sobreMim article {
     width: 90%;
+  }
+
+  #sobreMim img {
+    width: 90%;
+  }
+  .tecnologias {
+    width: 90%;
+  }
+  .personal {
+  height: auto;
+  padding: 15px;
+  }
+  .contact{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    }
+    #projetos {
+      align-items: center;
+      /* height: auto;
+      display: flex;
+      flex-direction: column; */
+    }
+
+    #projetos div {
+      gap: 0.5rem;
+      align-items: center;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    #projetos div a {
+      width: 80%;
+    }
+
+  }
+
+  
+@media (min-width: 600px ) and (max-width: 1000px) {
+  .headerNav {
+    visibility: hidden;
+  }
+  /* .input {
+    width: 40vh;
+    height: 1em;
+    border-radius: 15px; */
+  /* } */
+  .personal img {
+    width: 30%;
+  }
+  /* .line-1 {
+    font-size: 80%;
+  } */
+  #sobreMim {
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .spans {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .spans span {
+    height: 25px;
+    width: 47%;
+    font-size: 10px;
+    letter-spacing: normal;
+  }
+  #sobreMim article {
+    width: 90%;
+  }
+
+  #sobreMim img {
+    width: 50%;
   }
   .tecnologias {
     width: 90%;
