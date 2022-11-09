@@ -6,7 +6,7 @@ class Header extends Component {
       <header id="inicio">
       <nav>
         <a href="#personal">{'<LucasMoura />'}</a>
-        <div>
+        <div className='headerNav'>
         <a href="#projetos">projetos</a>
         <a href="#sobreMim">sobre</a>
         <a href="#contact">contato</a>
