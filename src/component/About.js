@@ -36,15 +36,11 @@ class About extends Component {
                         <span>Node.js</span>
                         <span>Redux</span>
                         <span>Context API</span>
-                        <span>Hooks</span>
                         <span>Jest</span>
                         <span>RTL</span>
                         <span>Docker</span>
                         <span>MySQL</span>
                         <span>MongoDB</span>
-                        <span>POO</span>
-                        <span>SOLID</span>
-                        <span>REST</span>
                     </div>
                 </div>
             </section>
