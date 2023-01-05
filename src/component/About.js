@@ -30,7 +30,10 @@ class About extends Component {
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
-                        <span>React</span>
+                        <span>Git/GitHub</span>
+                        <span>TypeScript</span>
+                        <span>React.js</span>
+                        <span>Node.js</span>
                         <span>Redux</span>
                         <span>Context API</span>
                         <span>Hooks</span>
@@ -38,7 +41,10 @@ class About extends Component {
                         <span>RTL</span>
                         <span>Docker</span>
                         <span>MySQL</span>
-                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>POO</span>
+                        <span>SOLID</span>
+                        <span>REST</span>
                     </div>
                 </div>
             </section>
