@@ -26,6 +26,9 @@ class Projects extends Component {
           <a href="https://trivia-kugpvnmf2-lcsrbr.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={triviaImg} alt="imagem trivia" />
           </a>
+          <a href="https://frontend-production-5124.up.railway.app/leaderboard" target="_blank" className="ext" rel="noreferrer" >
+          <img src="https://raw.githubusercontent.com/lcsrbr/TrybeFutebolClube/main/imgs/login.png" alt="imagem TFC" />
+          </a>
         </div>
       </section>
     );
