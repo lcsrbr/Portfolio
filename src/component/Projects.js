@@ -18,7 +18,7 @@ class Projects extends Component {
           <a href="https://trybe-wallet-eta.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={trybewalletImg} alt="imagem trybewallet" />
           </a>
-          <a href="https://trivia-kugpvnmf2-lcsrbr.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
+          <a href="https://trivia-nu-gilt.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
           <img src={triviaImg} alt="imagem trivia" />
           </a>
           <a href="https://trybe-tunes-blond.vercel.app/" target="_blank" className="ext" rel="noreferrer" >
