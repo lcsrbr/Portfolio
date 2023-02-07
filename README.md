@@ -1,71 +1,38 @@
-# Getting Started with Create React App
+MKS Front End Store Challenge
+===========================
+Projeto realizado para o processo seletivo de Desenvolvedor Front End da MKS Desenvolvimento de Sistemas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [Acesse o projeto por aqui!](https://mks-frontend-store-challenge.vercel.app/)
 
-## Available Scripts
+Sobre o projeto
+===========================
+O projeto consiste em uma página Front End feita com TypeScript e React, com exibição dos produtos, funcionalidades de carrinho, adição, subtração e remoção dos produtos. A aplicação consome a [API REST de produtos da MKS](https://mks-challenge-api-frontend.herokuapp.com/api-docs/);
 
-In the project directory, you can run:
+Tecnologias Utilizadas
+===========================
 
-### `npm start`
+- Projeto escrito em <b>React</b> com <b>TypeScript</b>;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Todo estado é gerenciado via <b>Redux-Tookit</b>;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Estilização feita com <b>Styled Components</b>;
 
-### `npm test`
+- Cobertura de Testes Unitários com <b>JEST e Testing-Library</b>;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Orientações
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <summary><strong>‼️ Para acessar o projeto: </strong></summary><br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  1. Clone o repositório
 
-### `npm run eject`
+  - Use o comando: `git@github.com:lcsrbr/mks-frontend-store-challenge.git`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  2. Instale as dependências
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Portfolio
+  - `npm install`.
+  
+  # [Outros Projetos](https://portfolio-bay-omega-17.vercel.app/#projetos)
+<img src='https://raw.githubusercontent.com/lcsrbr/mks-frontend-store-challenge/main/src/images/home.png?token=GHSAT0AAAAAAB5R4TA3VDK2UEQTKEJWE4YQY63AMGA'></img>
+<img src='https://raw.githubusercontent.com/lcsrbr/mks-frontend-store-challenge/main/src/images/cart.png?token=GHSAT0AAAAAAB5R4TA3L5A2KMOTXNQQWYRIY63AMWA'></img>
