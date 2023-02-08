@@ -8,20 +8,20 @@ export const FooterDiv = styled.footer`
   align-items: center;
   width: 100%;
   gap: 1rem;
-  height: 80px;
+  height: 100px;
   background: ${colors.background2};
   bottom: 0;
   position: absolute;
 
   div {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   p {
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18x;
     line-height: 15px;
     color: ${colors.font2};
   }

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
+
 export const Header = styled.header`
 @media only screen and (max-width: 800px) {
   h1 {
@@ -128,6 +129,7 @@ input {
   .slider:before {
     position: absolute;
     content: '🌚';
+    text-shadow: 2px 2px 5px #000000;
     text-align: center;
     font-size: 25px;
     // height: 26px;

@@ -29,11 +29,9 @@ function Header() {
           <Link to="/about">Sobre</Link>
           <Link to="/projects">Projetos</Link>
           <Link to="/contact">Contato</Link>
-          {/* <button > x </button> */}
           <S.Switch className="switch" onClick={() => setTheme(!theme)}>
             <input type="checkbox" checked={theme} />
             <span className="slider round"></span>
-            {/* <p className="slider round"></p> */}
           </S.Switch>
         </nav>
       </S.Nav>

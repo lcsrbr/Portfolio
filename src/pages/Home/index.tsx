@@ -1,30 +1,44 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import lucasImg from '../../images/emoji.png';
+import hi from '../../images/hi.png';
+import curriculo from '../../images/curriculo.pdf';
 import * as S from './styles';
 
 function Home() {
   return (
-    <S.Section>
-      <img src={lucasImg} alt="foto " />
-      <div>
-        <p>
-          Olá! Meu nome é <span>Lucas Moura</span>
-        </p>
-        <h1>eu sou</h1>
-        <p className=" input line-1 anim-typewriter">Desenvolvedor Web. </p>
-        <p>
-          Meu desejo é unir minhas experiências passadas com essa poderosa
-          ferramenta que é o Desenvolvimento Web. Enquanto programador ainda
-          quero ajudar as pessoas a encontrarem a melhor solução para os
-          problemas que ainda irão surgir!
-        </p>
-      </div>
-      <button>
-        <a href={'/'} target="_blank" rel="noreferrer">
-          Currículo
-        </a>
-      </button>
-    </S.Section>
+    <S.Main>
+      <S.Section>
+        <S.TextDiv>
+          <p>
+            Olá! Meu nome é{' '}
+            <S.Span>
+              Lucas Moura <img src={hi} alt="hi emoji" />{' '}
+            </S.Span>
+            <span>e eu sou</span>
+          </p>
+          <p className=" input line-1 anim-typewriter">Desenvolvedor Web. </p>
+          <S.Paragraph>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+            fugiat iusto fuga praesentium optio, eaque rerum!
+          </S.Paragraph>
+          <S.ButtonDiv>
+            <a
+              href={curriculo}
+              target="_blank"
+              className="ext"
+              rel="noreferrer"
+            >
+              Baixar Currículo
+            </a>
+            <Link to="/contact">Entre em Contato</Link>
+          </S.ButtonDiv>
+        </S.TextDiv>
+        <S.Img src={lucasImg} alt="foto " />
+      </S.Section>
+    </S.Main>
   );
 }
 
