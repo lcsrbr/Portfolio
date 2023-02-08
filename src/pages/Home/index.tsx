@@ -19,10 +19,10 @@ function Home() {
           </p>
           <p className=" input line-1 anim-typewriter">Desenvolvedor Web. </p>
           <S.Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum!
+            Meu desejo é unir minhas experiências passadas com essa poderosa
+            ferramenta que é o Desenvolvimento Web. Enquanto programador eu
+            ajudo as pessoas a encontrarem a melhor solução para os problemas
+            atuais e que ainda irão surgir.
           </S.Paragraph>
           <S.ButtonDiv>
             <a
