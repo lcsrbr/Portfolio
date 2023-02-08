@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import colors from '../styles/colors';
-export const Header = styled.div`
+import colors from '../../styles/colors';
+export const Header = styled.header`
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 25px;
@@ -32,6 +32,10 @@ export const Nav = styled.div<{ open: boolean }>`
     background-color: transparent;
   }
   justify-content: center;
+  a {
+    display: flex;
+    align-items: center;
+  }
   nav {
     display: flex;
     gap: 1rem;
@@ -41,7 +45,7 @@ export const Nav = styled.div<{ open: boolean }>`
   }
 
   @media only screen and (min-width: 800px) {
-    button {
+    .container {
       display: none;
     }
   }
@@ -71,7 +75,7 @@ export const Nav = styled.div<{ open: boolean }>`
     display: flex;
     align-items: center;
 
-    button: {
+    .container: {
       position: absolute;
       display: inline-block;
       cursor: pointer;
@@ -93,5 +97,70 @@ export const Nav = styled.div<{ open: boolean }>`
       top: 0;
       right: 0;
     }
+  }
+`;
+
+export const Switch = styled.button`
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 24px;
+  }
+
+input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: ${colors.font2};};
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '🌚';
+    text-align: center;
+    font-size: 25px;
+    // height: 26px;
+    // width: 26px;
+    left: -1px;
+    bottom: -6px;
+    // background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: ${colors.font1};};
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    content: '🌝';
+
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
   }
 `;

@@ -5,6 +5,7 @@ import * as S from './styles';
 function Header() {
   const [toggle, setToggle] = useState(false);
   const [animated, setAnimated] = useState('container');
+  const [theme, setTheme] = useState(true);
 
   const handleButton = () => {
     setToggle(!toggle);
@@ -25,10 +26,15 @@ function Header() {
         </button>
         <nav>
           <Link to="/">Início</Link>
-          <Link to="/sobre">Sobre</Link>
-          <Link to="/projetos">Projetos</Link>
-          <Link to="/contato">Contato</Link>
-          <p>☀️</p>
+          <Link to="/about">Sobre</Link>
+          <Link to="/projects">Projetos</Link>
+          <Link to="/contact">Contato</Link>
+          {/* <button > x </button> */}
+          <S.Switch className="switch" onClick={() => setTheme(!theme)}>
+            <input type="checkbox" checked={theme} />
+            <span className="slider round"></span>
+            {/* <p className="slider round"></p> */}
+          </S.Switch>
         </nav>
       </S.Nav>
     </S.Header>
