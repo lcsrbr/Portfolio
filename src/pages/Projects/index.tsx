@@ -8,13 +8,48 @@ function Projects() {
       <h1>Projetos</h1>
       <S.Container>
         <ProjectsCard
-          title={'teste'}
+          title={'Todo List App'}
           description={
-            'teste teste teste teste teste teste teste teste teste teste teste teste '
+            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
           }
-          techs={'teste teste teste teste teste teste '}
-          link={'testetestetestetesteteste'}
-          image={'testetestetesteteste'}
+          techs={['JavaScript', 'CSS', 'HTML']}
+          link={'https://todo-list-ecru-nine.vercel.app/'}
+          image={
+            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
+          }
+        />
+        <ProjectsCard
+          title={'Todo List App'}
+          description={
+            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
+          }
+          techs={['JavaScript', 'CSS', 'HTML']}
+          link={'https://todo-list-ecru-nine.vercel.app/'}
+          image={
+            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
+          }
+        />
+        <ProjectsCard
+          title={'Todo List App'}
+          description={
+            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
+          }
+          techs={['JavaScript', 'CSS', 'HTML']}
+          link={'https://todo-list-ecru-nine.vercel.app/'}
+          image={
+            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
+          }
+        />
+        <ProjectsCard
+          title={'Todo List App'}
+          description={
+            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
+          }
+          techs={['JavaScript', 'CSS', 'HTML']}
+          link={'https://todo-list-ecru-nine.vercel.app/'}
+          image={
+            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
+          }
         />
         {/* <ProjectsCard />
         <ProjectsCard />

@@ -4,7 +4,7 @@ import * as S from './styles';
 interface IProjCard {
   title: string;
   description: string;
-  techs: string;
+  techs: string[];
   link: string;
   image: string;
 }
@@ -12,11 +12,13 @@ interface IProjCard {
 function ProjectsCard({ title, description, techs, link, image }: IProjCard) {
   return (
     <S.Div>
-      <p>{title}</p>
-      <p>{description}</p>
-      <p>{techs}</p>
+      <h1>{title}</h1>
       <img src={image} />
-      <a href={link}>saiba mais</a>
+      <S.Infos className="card">
+        <p>{description}</p>
+        <p>{techs}</p>
+        <a href={link}>saiba mais</a>
+      </S.Infos>
     </S.Div>
   );
 }
