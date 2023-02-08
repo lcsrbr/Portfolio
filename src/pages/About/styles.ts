@@ -27,6 +27,9 @@ export const Text = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  p {
+    text-align: justify;
+  }
   color: white;
   gap: 2rem;
   width: 800px;
@@ -63,7 +66,6 @@ export const Techs = styled.div`
       background: ${colors.font2};
       border-radius: 12px;
     }
-    // min-width: 800px;
     gap: 2rem;
   }
 `;

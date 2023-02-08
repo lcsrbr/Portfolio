@@ -32,6 +32,7 @@ export const ButtonDiv = styled.div`
   gap: 5rem;
   margin-top: 2rem;
   a {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;

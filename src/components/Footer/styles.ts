@@ -16,6 +16,11 @@ export const FooterDiv = styled.footer`
   div {
     display: flex;
     gap: 2rem;
+    a {
+      img {
+        width: 30px;
+      }
+    }
   }
 
   p {
@@ -24,5 +29,6 @@ export const FooterDiv = styled.footer`
     font-size: 18x;
     line-height: 15px;
     color: ${colors.font2};
+    img 
   }
 `;
