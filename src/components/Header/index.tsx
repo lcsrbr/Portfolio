@@ -60,7 +60,7 @@ function Header() {
     } else {
       dispatch(reduxTheme(themeLcSt));
     }
-    if (themeLcSt.theme === 'light') {
+    if (lcSt && themeLcSt.theme === 'light') {
       setTheme(false);
     }
   }, []);
