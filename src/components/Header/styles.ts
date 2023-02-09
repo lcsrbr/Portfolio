@@ -17,13 +17,13 @@ export const Header = styled.header`
   // gap: 40rem;
   justify-content: space-between;
   padding:  0px 1vh 0px 1vh;
-  background-color: ${colors.background1};
+  background-color: ${({ theme }) => theme.background1};
   height: 70px;
   h1 {
-    color: ${colors.font1};
+    color: ${({ theme }) => theme.font1};
   }
   h1: hover {
-    color: ${colors.font2}};
+    color: ${({ theme }) => theme.font2}};
   }
 `;
 
@@ -34,6 +34,7 @@ export const Nav = styled.div<{ open: boolean }>`
   }
   justify-content: center;
   a {
+    color: ${({ theme }) => theme.font2}};
     display: flex;
     align-items: center;
   }
@@ -42,7 +43,7 @@ export const Nav = styled.div<{ open: boolean }>`
     gap: 1rem;
   }
   a: hover {
-    color: ${colors.font1};
+    color: ${({ theme }) => theme.font1};
   }
 
   @media only screen and (min-width: 800px) {
@@ -56,7 +57,7 @@ export const Nav = styled.div<{ open: boolean }>`
   .bar3 {
     width: 25px;
     height: 2px;
-    background-color: ${colors.font1};
+    background-color: ${({ theme }) => theme.font1};
     margin: 2px 0;
     transition: 0.4s;
   }
@@ -86,7 +87,7 @@ export const Nav = styled.div<{ open: boolean }>`
     nav {
       align-items: center;
       transform: ${({ open }) => (open ? `translateX(0)` : `translateX(100%)`)};
-      background-color: ${({ open }) => open && colors.background1};
+      background-color: ${({ theme }) => theme.background2};
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -121,7 +122,7 @@ input {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${colors.font2};};
+    background-color: ${({ theme }) => theme.font2};};
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -142,7 +143,7 @@ input {
   }
 
   input:checked + .slider {
-    background-color: ${colors.font1};};
+    background-color: ${({ theme }) => theme.font1};};
   }
 
   input:focus + .slider {

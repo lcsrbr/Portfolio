@@ -1,23 +1,22 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 // import IProducts from '../../interfaces/IProducts';
-
-interface ITheme {
-  font1: string;
-  font2: string;
-  font3: string;
-  background1: string;
-  background2: string;
-}
+import { ITheme } from '../../interfaces';
 
 const slice = createSlice({
   name: 'theme',
   initialState: {
-    theme: {} as ITheme,
+    theme: {
+      theme: 'dark',
+      font1: '#9f4fa3',
+      font2: '#d4ccd6',
+      font3: '#020122',
+      background1: '#0a0613',
+      background2: '#130c25',
+    } as ITheme,
   },
 
   reducers: {
     theme(_state, theme: PayloadAction<ITheme>) {
-      localStorage.setItem('theme', JSON.stringify(theme));
       return {
         theme: theme.payload,
       };

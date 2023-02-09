@@ -14,13 +14,14 @@ export const Div = styled.div`
     height: 240px;
   }
 
-  :hover {
+  :hover,
+  :focus {
     background-color: ${colors.font1};
     box-shadow: 0 0 0 5px ${colors.font1}5f;
     color: #fff;
     .card {
+      margin-top: -254px;
       display: flex;
-      transform: translateY(-105%);
       z-index: 0;
     }
   }
@@ -44,6 +45,20 @@ export const Div = styled.div`
   img {
     width: 100%;
     border-radius: 15px;
+  }
+  @media screen and (max-width: 1050px) {
+    width: 40rem;
+    height: auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 25rem;
+    height: auto;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 20rem;
+    height: auto;
   }
 `;
 

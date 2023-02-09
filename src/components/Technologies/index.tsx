@@ -1,9 +1,6 @@
 import React from 'react';
 import TechDiv from './styles';
-interface ITech {
-  img: string;
-  title: string;
-}
+import { ITech } from '../../interfaces';
 
 function index({ img, title }: ITech) {
   return (

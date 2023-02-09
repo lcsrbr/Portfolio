@@ -4,9 +4,9 @@ import linkedin from '../../images/linkedin.svg';
 import github from '../../images/github.png';
 import gmail from '../../images/gmail.png';
 
-function Footer({ colors }: any) {
+function Footer() {
   return (
-    <S.FooterDiv colors={colors}>
+    <S.FooterDiv>
       <div>
         <a
           href="https://github.com/lcsrbr"

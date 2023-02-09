@@ -1,13 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-
-interface IProjCard {
-  title: string;
-  description: string;
-  techs: string[];
-  link: string;
-  image: string;
-}
+import { IProjCard } from '../../interfaces';
 
 function ProjectsCard({ title, description, techs, link, image }: IProjCard) {
   return (

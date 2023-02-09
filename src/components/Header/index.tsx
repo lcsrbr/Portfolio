@@ -50,16 +50,18 @@ function Header() {
   };
 
   useEffect(() => {
-    const theme = localStorage.getItem('theme');
-    const teste = { ...colors };
-    console.log(colors);
-    if (!theme) {
-      localStorage.setItem('theme', JSON.stringify(teste));
+    const lcSt = localStorage.getItem('theme');
+    const themeLcSt = lcSt && JSON.parse(lcSt);
+
+    console.log(lcSt);
+    if (!lcSt) {
       dispatch(reduxTheme(colors));
-      console.log(teste);
+      localStorage.setItem('theme', JSON.stringify(colors));
+    } else {
+      dispatch(reduxTheme(themeLcSt));
     }
-    if (theme) {
-      // dispatch(reduxTheme(JSON.parse(theme)));
+    if (themeLcSt.theme === 'light') {
+      setTheme(false);
     }
   }, []);
 

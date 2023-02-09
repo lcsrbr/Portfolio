@@ -1,18 +1,26 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
 
 export const Main = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 110px;
   font-size: 150%;
-  color: ${colors.font2};
+  color: ${({ theme }) => theme.font2};
   p img {
     width: 50px;
   }
-  height: 80vh;
+
+  @media (max-width: 1100px) {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+  @media (max-width: 600px) {
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+  // height: 80vh;
+  background-color: ${({ theme }) => theme.background1};
 `;
 
 export const Links = styled.div`
@@ -32,6 +40,15 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  height: 90vh;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    height: 100%;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;
 
 export const Div = styled.div`
@@ -40,6 +57,15 @@ export const Div = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 700px;
+  @media (max-width: 500px) {
+    width: 200px;
+  }
+  @media (max-width: 1000px) {
+    width: 400px;
+  }
+  @media (max-width: 800px) {
+    width: 300px;
+  }
   text-align: center;
   gap: 1rem;
   text-align: justify;
@@ -59,12 +85,10 @@ export const Form = styled.form`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.background2};
-    color: ${colors.font2};
     border: none;
     border-radius: 15px;
-    width: 400px;
-    height: 50px;
+    width: 280px;
+    height: 45px;
     transition: 0.3s;
   }
 
@@ -72,13 +96,13 @@ export const Form = styled.form`
   textarea:focus,
   button:hover,
   button:focus {
-    background-color: ${colors.font1};
-    box-shadow: 0 0 0 5px ${colors.font1}5f;
+    background-color: ${({ theme }) => theme.background2};
+    box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}5f;
     color: #fff;
   }
 
   textarea {
-    height: 250px;
+    height: 200px;
   }
   button {
     cursor: pointer;

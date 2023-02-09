@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+import { ITheme } from '../interfaces';
+
+const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +18,15 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: ${({ theme }) => theme.background1};
 }
 
 a {
     text-decoration: none;
-    color: #fff;
 }
+
+`;
+
+export default GlobalStyle;

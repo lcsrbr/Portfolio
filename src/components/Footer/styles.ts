@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FooterDiv = styled.footer<{ colors: any }>`
+export const FooterDiv = styled.footer`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,7 +8,7 @@ export const FooterDiv = styled.footer<{ colors: any }>`
   width: 100%;
   gap: 1rem;
   height: 100px;
-  background: ${({ colors }) => colors.background2};
+  background: ${({ theme }) => theme.background2};
   bottom: 0;
   position: absolute;
 
@@ -27,7 +27,7 @@ export const FooterDiv = styled.footer<{ colors: any }>`
     font-weight: 400;
     font-size: 18x;
     line-height: 15px;
-    color: ${({ colors }) => colors.font2};
+    color: ${({ theme }) => theme.font2};
     img 
   }
 `;

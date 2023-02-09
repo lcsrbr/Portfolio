@@ -7,12 +7,11 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Projects from './pages/Projects';
-// import colors from './styles/colors';
-
-import './styles/global.css';
 import './styles/transitions.css';
 import { useSelector } from 'react-redux';
 import { RootState } from '../src/redux/store';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './styles/globalStyles';
 
 function App() {
   const colors = useSelector(({ theme }: RootState) => theme.theme);
@@ -21,24 +20,25 @@ function App() {
 
   return (
     <main>
-      <Header />
-      <TransitionGroup>
-        <CSSTransition key={location.key} classNames="transition" timeout={300}>
-          <Switch location={location}>
-            {/* <Route exact path="/" component={Home} colors={colors}  /> */}
-            <Route
-              exact
-              path="/"
-              render={props => <Home {...props} colors={colors} />}
-            />
-
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/projects" component={Projects} />
-          </Switch>
-        </CSSTransition>
-      </TransitionGroup>
-      <Footer colors={colors} />
+      <ThemeProvider theme={colors}>
+        <Header />
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            classNames="transition"
+            timeout={300}
+          >
+            <Switch location={location}>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/projects" component={Projects} />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+        <Footer />
+        <GlobalStyle />
+      </ThemeProvider>
     </main>
   );
 }
