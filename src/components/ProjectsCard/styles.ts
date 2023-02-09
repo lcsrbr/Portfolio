@@ -43,6 +43,7 @@ export const Div = styled.div`
 
   img {
     width: 100%;
+    height: 340px;
     max-width: 600px;
     border-radius: 15px;
   }
@@ -59,6 +60,10 @@ export const Div = styled.div`
   @media screen and (max-width: 500px) {
     width: 20rem;
     height: auto;
+    img {
+      object-fit: cover;
+      object-position: 50%;
+    }
   }
 `;
 
@@ -90,7 +95,6 @@ export const Techs = styled.div`
     width: 60%;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     a,
     p {
       background-color: ${({ theme }) => theme.background2};
@@ -99,5 +103,9 @@ export const Techs = styled.div`
       border-radius: 10px;
       padding: 5px;
     }
+  }
+  @media screen and (max-width: 1050px) {
+    flex-wrap: wrap;
+    overflow-x: scroll;
   }
 `;
