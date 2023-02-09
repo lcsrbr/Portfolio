@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
 
 export const Div = styled.div`
   display: flex;
@@ -16,9 +15,9 @@ export const Div = styled.div`
 
   :hover,
   :focus {
-    background-color: ${colors.font1};
-    box-shadow: 0 0 0 5px ${colors.font1}9f;
-    color: #fff;
+    background-color: ${({ theme }) => theme.font1};
+    box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}9f;
+    color: ${({ theme }) => theme.font2};
     .card {
       margin-top: -254px;
       display: flex;
@@ -33,8 +32,8 @@ export const Div = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.background2}9a;
-    color: ${colors.font3};
+    background-color: ${({ theme }) => theme.background2}9a;
+    color: ${({ theme }) => theme.font2};
     border: none;
     border-radius: 15px;
     width: 250px;
@@ -70,7 +69,7 @@ export const Infos = styled.div`
   justify-content: center;
   padding: 100px 0px;
   gap: 1rem;
-  background-color: ${colors.background2}9f;
+  background-color: ${({ theme }) => theme.background2}9f;
   // width: 600px;
   height: 240px;
   // margin-top: -240px;
@@ -79,17 +78,24 @@ export const Infos = styled.div`
 `;
 
 export const Techs = styled.div`
-  background-color: ${colors.background1};
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  a {
-    background-color: ${colors.background2};
-    border-radius: 15px;
-
+  gap: 1rem;
+  div {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    a,
+    p {
+      background-color: ${({ theme }) => theme.background2};
+      color: ${({ theme }) => theme.font1};
+
+      border-radius: 10px;
+      padding: 5px;
+    }
   }
 `;

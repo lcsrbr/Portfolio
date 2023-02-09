@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
 
 export const Header = styled.header`
 @media only screen and (max-width: 800px) {

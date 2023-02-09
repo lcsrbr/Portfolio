@@ -6,7 +6,6 @@ import * as S from './styles';
 function Projects() {
   return (
     <S.Main>
-      <h1>Projetos</h1>
       <S.Container>
         {data.map(({ title, description, techs, links, image }, index) => {
           return (

@@ -46,6 +46,8 @@ export const Text = styled.section`
   color: white;
   gap: 2rem;
   width: 800px;
+  font-size: 90%;
+
   span {
     font-size: 150%;
   }
@@ -67,8 +69,10 @@ export const Main = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: ${({ theme }) => theme.background1};
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1300px) {
     height: 100%;
+    margin-top: 70px;
+    margin-bottom: 100px;
   }
 `;
 
