@@ -78,10 +78,18 @@ function Header() {
           <div className="bar3"></div>
         </button>
         <nav>
-          <Link to="/">Início</Link>
-          <Link to="/about">Sobre</Link>
-          <Link to="/projects">Projetos</Link>
-          <Link to="/contact">Contato</Link>
+        <Link to="/" onClick={() => setToggle(!toggle)}>
+            Início
+          </Link>
+          <Link to="/about" onClick={() => setToggle(!toggle)}>
+            Sobre
+          </Link>
+          <Link to="/projects" onClick={() => setToggle(!toggle)}>
+            Projetos
+          </Link>
+          <Link to="/contact" onClick={() => setToggle(!toggle)}>
+            Contato
+          </Link>
           <S.Switch className="switch" onClick={() => handleTheme()}>
             <input type="checkbox" checked={theme} />
             <span className="slider round"></span>
