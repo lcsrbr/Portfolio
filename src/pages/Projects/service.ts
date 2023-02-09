@@ -1,3 +1,7 @@
+import tfc from '../../images/tfc.png';
+import todo from '../../images/todo.png';
+import trybewallet from '../../images/trybewallet.png';
+
 export default [
   {
     title: 'Todo List App',
@@ -10,8 +14,7 @@ export default [
       github: 'https://github.com/lcsrbr/todo-list',
       website: 'https://todo-list-ecru-nine.vercel.app/',
     },
-    image:
-      'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png',
+    image: todo,
   },
   {
     title: 'Trybe Wallet',
@@ -23,8 +26,7 @@ export default [
       github: 'https://github.com/lcsrbr/TrybeWallet',
       website: 'https://trybe-wallet-eta.vercel.app/',
     },
-    image:
-      'https://portfolio-bay-omega-17.vercel.app/static/media/trybewallet.8d7d60738e1539896669.png',
+    image: trybewallet,
   },
   {
     title: 'Trybe Futebol Clube',
@@ -44,7 +46,6 @@ export default [
       github: 'https://github.com/lcsrbr/TrybeFutebolClube',
       website: 'https://frontend-production-5124.up.railway.app/leaderboard',
     },
-    image:
-      'https://portfolio-bay-omega-17.vercel.app/static/media/tfcImg.64d314297e53d03c9d91.png',
+    image: tfc,
   },
 ];
