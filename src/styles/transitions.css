@@ -1,0 +1,8 @@
+.transition-enter {
+    backdrop-filter: blur(100vh);
+    opacity: 0;
+    position: absolute;
+    z-index: 500;
+    /* transition: .5s; */
+}
+
