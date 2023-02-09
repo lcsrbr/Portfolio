@@ -43,6 +43,7 @@ export const Div = styled.div`
 
   img {
     width: 100%;
+    max-width: 600px;
     border-radius: 15px;
   }
   @media screen and (max-width: 1050px) {
@@ -70,7 +71,7 @@ export const Infos = styled.div`
   padding: 100px 0px;
   gap: 1rem;
   background-color: ${({ theme }) => theme.background2}9f;
-  // width: 600px;
+  width: 100%;
   height: 240px;
   // margin-top: -240px;
   z-index: -5;
@@ -89,6 +90,7 @@ export const Techs = styled.div`
     width: 60%;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     a,
     p {
       background-color: ${({ theme }) => theme.background2};
