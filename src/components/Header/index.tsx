@@ -78,7 +78,7 @@ function Header() {
           <div className="bar3"></div>
         </button>
         <nav>
-        <Link to="/" onClick={() => setToggle(!toggle)}>
+          <Link to="/" onClick={() => setToggle(!toggle)}>
             Início
           </Link>
           <Link to="/about" onClick={() => setToggle(!toggle)}>
