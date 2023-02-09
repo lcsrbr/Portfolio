@@ -134,8 +134,8 @@ input {
     font-size: 25px;
     // height: 26px;
     // width: 26px;
-    left: -1px;
-    bottom: -6px;
+    left: -5px;
+    bottom: -3px;
     // background-color: white;
     -webkit-transition: 0.4s;
     transition: 0.4s;
