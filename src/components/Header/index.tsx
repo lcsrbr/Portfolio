@@ -1,16 +1,67 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import colors from '../../styles/colors';
 import * as S from './styles';
+import { useDispatch } from 'react-redux';
+import { theme as reduxTheme } from '../../redux/reducer/theme';
 
 function Header() {
   const [toggle, setToggle] = useState(false);
   const [animated, setAnimated] = useState('container');
   const [theme, setTheme] = useState(true);
+  const dispatch = useDispatch();
 
   const handleButton = () => {
     setToggle(!toggle);
     setAnimated(animated === 'container' ? 'change container' : 'container');
   };
+
+  const handleTheme = () => {
+    const lcSt = localStorage.getItem('theme');
+    const localParse = lcSt && JSON.parse(lcSt);
+    const light = {
+      theme: 'light',
+      background2: '#9f4fa3',
+      background1: '#d4ccd6',
+      font1: '#020122',
+      font3: '#0a0613',
+      font2: '#130c25',
+    };
+
+    const dark = {
+      theme: 'dark',
+      font1: '#9f4fa3',
+      font2: '#d4ccd6',
+      font3: '#020122',
+      background1: '#0a0613',
+      background2: '#130c25',
+    };
+
+    if (lcSt && localParse.theme === 'dark') {
+      dispatch(reduxTheme(light));
+      localStorage.setItem('theme', JSON.stringify(light));
+    }
+
+    if (lcSt && localParse.theme === 'light') {
+      dispatch(reduxTheme(dark));
+      localStorage.setItem('theme', JSON.stringify(dark));
+    }
+    setTheme(!theme);
+  };
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    const teste = { ...colors };
+    console.log(colors);
+    if (!theme) {
+      localStorage.setItem('theme', JSON.stringify(teste));
+      dispatch(reduxTheme(colors));
+      console.log(teste);
+    }
+    if (theme) {
+      // dispatch(reduxTheme(JSON.parse(theme)));
+    }
+  }, []);
 
   return (
     <S.Header>
@@ -29,7 +80,7 @@ function Header() {
           <Link to="/about">Sobre</Link>
           <Link to="/projects">Projetos</Link>
           <Link to="/contact">Contato</Link>
-          <S.Switch className="switch" onClick={() => setTheme(!theme)}>
+          <S.Switch className="switch" onClick={() => handleTheme()}>
             <input type="checkbox" checked={theme} />
             <span className="slider round"></span>
           </S.Switch>

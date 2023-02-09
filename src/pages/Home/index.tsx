@@ -5,9 +5,9 @@ import hi from '../../images/hi.png';
 import curriculo from '../../images/curriculo.pdf';
 import * as S from './styles';
 
-function Home() {
+function Home({ colors }: any) {
   return (
-    <S.Main>
+    <S.Main colors={colors}>
       <S.Section>
         <S.TextDiv>
           <p>

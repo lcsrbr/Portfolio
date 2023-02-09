@@ -19,9 +19,9 @@ export const Div = styled.div`
     box-shadow: 0 0 0 5px ${colors.font1}5f;
     color: #fff;
     .card {
-      // display: flex;
+      display: flex;
       transform: translateY(-105%);
-      z-index: 1;
+      z-index: 0;
     }
   }
   h1 {
@@ -48,13 +48,13 @@ export const Div = styled.div`
 `;
 
 export const Infos = styled.div`
-  display: flex;
+  display: none;
+  animation: fadeIn 1s;
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
   padding: 100px 0px;
   gap: 3rem;
-  // transform: translateY(0%);
   background-color: ${colors.background2}9a;
   // width: 600px;
   height: 240px;

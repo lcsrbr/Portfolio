@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import colors from '../../styles/colors';
 
-export const Main = styled.div`
+export const Main = styled.div<{ colors?: any }>`
   display: flex;
   height: 100vh;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: ${({ colors }) => colors.background1};
 `;
 
 export const Section = styled.section`

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectsCard from '../../components/ProjectsCard';
+import data from './service';
 import * as S from './styles';
 
 function Projects() {
@@ -7,53 +8,18 @@ function Projects() {
     <S.Main>
       <h1>Projetos</h1>
       <S.Container>
-        <ProjectsCard
-          title={'Todo List App'}
-          description={
-            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
-          }
-          techs={['JavaScript', 'CSS', 'HTML']}
-          link={'https://todo-list-ecru-nine.vercel.app/'}
-          image={
-            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
-          }
-        />
-        <ProjectsCard
-          title={'Todo List App'}
-          description={
-            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
-          }
-          techs={['JavaScript', 'CSS', 'HTML']}
-          link={'https://todo-list-ecru-nine.vercel.app/'}
-          image={
-            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
-          }
-        />
-        <ProjectsCard
-          title={'Todo List App'}
-          description={
-            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
-          }
-          techs={['JavaScript', 'CSS', 'HTML']}
-          link={'https://todo-list-ecru-nine.vercel.app/'}
-          image={
-            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
-          }
-        />
-        <ProjectsCard
-          title={'Todo List App'}
-          description={
-            'teste teste teste teste teste teste teste teste teste teste teste teste testetestetestetestetesteteste '
-          }
-          techs={['JavaScript', 'CSS', 'HTML']}
-          link={'https://todo-list-ecru-nine.vercel.app/'}
-          image={
-            'https://portfolio-lcsrbr.vercel.app/static/media/todolist.44070b0f91f895de9b4e.png'
-          }
-        />
-        {/* <ProjectsCard />
-        <ProjectsCard />
-        <ProjectsCard /> */}
+        {data.map(({ title, description, techs, link, image }, index) => {
+          return (
+            <ProjectsCard
+              key={index}
+              title={title}
+              description={description}
+              techs={techs}
+              link={link}
+              image={image}
+            />
+          );
+        })}
       </S.Container>
     </S.Main>
   );

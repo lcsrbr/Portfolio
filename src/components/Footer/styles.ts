@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import colors from '../../styles/colors';
 
-export const FooterDiv = styled.footer`
+export const FooterDiv = styled.footer<{ colors: any }>`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,7 +8,7 @@ export const FooterDiv = styled.footer`
   width: 100%;
   gap: 1rem;
   height: 100px;
-  background: ${colors.background2};
+  background: ${({ colors }) => colors.background2};
   bottom: 0;
   position: absolute;
 
@@ -28,7 +27,7 @@ export const FooterDiv = styled.footer`
     font-weight: 400;
     font-size: 18x;
     line-height: 15px;
-    color: ${colors.font2};
+    color: ${({ colors }) => colors.font2};
     img 
   }
 `;
