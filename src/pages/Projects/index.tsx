@@ -8,14 +8,14 @@ function Projects() {
     <S.Main>
       <h1>Projetos</h1>
       <S.Container>
-        {data.map(({ title, description, techs, link, image }, index) => {
+        {data.map(({ title, description, techs, links, image }, index) => {
           return (
             <ProjectsCard
               key={index}
               title={title}
               description={description}
               techs={techs}
-              link={link}
+              links={links}
               image={image}
             />
           );

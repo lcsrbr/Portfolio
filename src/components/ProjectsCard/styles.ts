@@ -17,7 +17,7 @@ export const Div = styled.div`
   :hover,
   :focus {
     background-color: ${colors.font1};
-    box-shadow: 0 0 0 5px ${colors.font1}5f;
+    box-shadow: 0 0 0 5px ${colors.font1}9f;
     color: #fff;
     .card {
       margin-top: -254px;
@@ -33,7 +33,7 @@ export const Div = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.background2}9f;
+    background-color: ${colors.background2}9a;
     color: ${colors.font3};
     border: none;
     border-radius: 15px;
@@ -67,13 +67,29 @@ export const Infos = styled.div`
   animation: fadeIn 1s;
   flex-direction: column;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 100px 0px;
-  gap: 3rem;
-  background-color: ${colors.background2}9a;
+  gap: 1rem;
+  background-color: ${colors.background2}9f;
   // width: 600px;
   height: 240px;
   // margin-top: -240px;
   z-index: -5;
   border-radius: 15px;
+`;
+
+export const Techs = styled.div`
+  background-color: ${colors.background1};
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  a {
+    background-color: ${colors.background2};
+    border-radius: 15px;
+
+    display: flex;
+    gap: 1rem;
+  }
 `;

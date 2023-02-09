@@ -2,7 +2,10 @@ export interface IProjCard {
   title: string;
   description: string;
   techs: string[];
-  links: string;
+  links: {
+    github: string;
+    website: string;
+  };
   image: string;
 }
 
