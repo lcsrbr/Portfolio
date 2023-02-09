@@ -9,7 +9,7 @@ function Footer() {
     <S.FooterDiv>
       <div>
         <a
-          href="https://github.com/lcsrbr"
+          href="https://www.linkedin.com/in/lucas-moura-ab1b89bb"
           target="_blank"
           className="ext"
           rel="noreferrer"
@@ -17,7 +17,7 @@ function Footer() {
           <img src={linkedin} alt="linkedin logo" />
         </a>
         <a
-          href="https://www.linkedin.com/in/lucas-moura-ab1b89bb"
+          href="https://github.com/lcsrbr"
           target="_blank"
           className="ext"
           rel="noreferrer"

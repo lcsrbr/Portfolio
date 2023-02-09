@@ -21,20 +21,20 @@ function Contact() {
             também possa te dar o melhor retorno possível.
           </p>
           <S.Links>
-            <a
-              href="https://github.com/lcsrbr"
-              target="_blank"
-              className="ext"
-              rel="noreferrer"
-            >
-              <img src={linkedin} alt="linkedin logo" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/lucas-moura-ab1b89bb"
-              target="_blank"
-              className="ext"
-              rel="noreferrer"
-            >
+          <a
+          href="https://www.linkedin.com/in/lucas-moura-ab1b89bb"
+          target="_blank"
+          className="ext"
+          rel="noreferrer"
+        >
+          <img src={linkedin} alt="linkedin logo" />
+        </a>
+        <a
+          href="https://github.com/lcsrbr"
+          target="_blank"
+          className="ext"
+          rel="noreferrer"
+        >
               <img src={github} alt="github logo" />
             </a>
             <a
