@@ -25,13 +25,13 @@ export const Container = styled.div`
   max-width: 1000px;
   @media screen and (max-width: 1050px) {
     max-width: 500px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
   @media screen and (max-width: 600px) {
     max-width: 300px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -83,12 +83,14 @@ export const Techs = styled.div`
   color: ${({ theme }) => theme.font1};
 
   section {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
     width: 100%;
     color: ${({ theme }) => theme.font1};
     display: flex;
     // justify-content: center;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: scroll;
     height: 130px;
     overflow-y: hidden;
     p {
