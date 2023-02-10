@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './styles';
-import linkedin from '../../images/linkedin.svg';
-import github from '../../images/github.png';
 import punch from '../../images/punch.png';
-import gmail from '../../images/gmail.png';
+import Linkedin from '../../components/Links/Linkedin';
+import Github from '../../components/Links/Github';
+import Gmail from '../../components/Links/Gmail';
 
 function Contact() {
   return (
@@ -21,30 +21,9 @@ function Contact() {
             também possa te dar o melhor retorno possível.
           </p>
           <S.Links>
-            <a
-              href="https://www.linkedin.com/in/lucas-moura-ab1b89bb"
-              target="_blank"
-              className="ext"
-              rel="noreferrer"
-            >
-              <img src={linkedin} alt="linkedin logo" />
-            </a>
-            <a
-              href="https://github.com/lcsrbr"
-              target="_blank"
-              className="ext"
-              rel="noreferrer"
-            >
-              <img src={github} alt="github logo" />
-            </a>
-            <a
-              href="mailto: 93lucasribeiro@gmail.com"
-              target="_blank"
-              className="ext"
-              rel="noreferrer"
-            >
-              <img src={gmail} alt="gmail logo" />
-            </a>
+            <Linkedin />
+            <Github />
+            <Gmail />
           </S.Links>
         </S.Div>
         <S.Form

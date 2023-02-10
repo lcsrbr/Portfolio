@@ -78,16 +78,16 @@ function Header() {
           <div className="bar3"></div>
         </button>
         <nav>
-          <Link to="/" onClick={() => setToggle(!toggle)}>
+          <Link to="/" onClick={() => handleButton()}>
             Início
           </Link>
-          <Link to="/about" onClick={() => setToggle(!toggle)}>
+          <Link to="/about" onClick={() => handleButton()}>
             Sobre
           </Link>
-          <Link to="/projects" onClick={() => setToggle(!toggle)}>
+          <Link to="/projects" onClick={() => handleButton()}>
             Projetos
           </Link>
-          <Link to="/contact" onClick={() => setToggle(!toggle)}>
+          <Link to="/contact" onClick={() => handleButton()}>
             Contato
           </Link>
           <S.Switch className="switch" onClick={() => handleTheme()}>

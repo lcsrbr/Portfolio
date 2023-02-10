@@ -1,111 +1,103 @@
 import styled from 'styled-components';
 
 export const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  width: 600px;
-  height: 340px;
-  border-radius: 15px;
+h2 {
+  margin: 8px;
+}
+@media screen and (max-width: 500px) {
+  width: 300px;
+  height: 150px;
+}
 
-  .card {
-    height: 240px;
-  }
-
-  :hover,
-  :focus {
-    background-color: ${({ theme }) => theme.font1};
-    box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}9f;
-    color: ${({ theme }) => theme.font2};
-    .card {
-      margin-top: -254px;
-      display: flex;
-      z-index: 0;
-    }
-  }
-  h1 {
-    position: absolute;
-    margin-top: 5px;
-    font-size: 150%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: ${({ theme }) => theme.background2}9a;
-    color: ${({ theme }) => theme.font2};
-    border: none;
-    border-radius: 15px;
-    width: 250px;
-    height: 50px;
-    transition: 0.3s;
-  }
-
-  img {
-    width: 100%;
-    height: 340px;
-    max-width: 600px;
-    border-radius: 15px;
-  }
-  @media screen and (max-width: 1050px) {
-    width: 40rem;
-    height: auto;
-  }
-
-  @media screen and (max-width: 800px) {
-    width: 25rem;
-    height: auto;
-  }
-
+.card {
   @media screen and (max-width: 500px) {
-    width: 20rem;
-    height: auto;
-    img {
-      object-fit: cover;
-      object-position: 50%;
-    }
+    position: fixed;
+    top: 25rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 300px;
+    height: 80vh;
+    background-color: ${({ theme }) => theme.font3};
+    backdrop-filter: blur(10px);
   }
+}
+  width: 500px;
+  height: 300px;
+  :hover {
+    .img {
+      filter: blur(5px);
+    }
+    .card {
+      display: flex;
+      background-color: ${({ theme }) => theme.font3}9f;
+      :hover {
+        box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}9f;
+      }
+  }
+  border-radius: 10px;
+
+
+
 `;
 
 export const Infos = styled.div`
   display: none;
-  animation: fadeIn 1s;
   flex-direction: column;
+  margin-top: -304px;
+  height: 100%;
+  background-color: red;
+  position: relative;
+  z-index: 2;
   text-align: center;
-  justify-content: center;
-  padding: 100px 0px;
   gap: 1rem;
-  background-color: ${({ theme }) => theme.background2}9f;
-  width: 100%;
-  height: 240px;
-  // margin-top: -240px;
-  z-index: -5;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  @media screen and (max-width: 500px) {
+    font-size: 1.4rem;
+  }
 `;
 
-export const Techs = styled.div`
-  border-radius: 15px;
+export const Desc = styled.div`
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+`;
+
+export const Techs = styled.div`
+  display: flex;
   div {
     display: flex;
-    gap: 0.5rem;
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-    a,
+    flex-direction: column;
     p {
-      background-color: ${({ theme }) => theme.background2};
-      color: ${({ theme }) => theme.font1};
-
-      border-radius: 10px;
-      padding: 5px;
+      font-size: 8px;
     }
   }
-  @media screen and (max-width: 1050px) {
-    flex-wrap: wrap;
-    overflow-x: scroll;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  img {
+    width: 30px;
   }
+`;
+
+export const BgImg = styled.img`
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50%;
+  z-index: 0;
+  border-radius: 10px;
+  @media screen and (max-width: 500px) {
+    width: 300px;
+    height: 150px;
+  }
+`;
+
+export const Footer = styled.div`
+  position: relative;
+  bottom: 0;
 `;

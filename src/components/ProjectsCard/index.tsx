@@ -1,30 +1,34 @@
 import React from 'react';
 import * as S from './styles';
 import { IProjCard } from '../../interfaces';
+import Github from '../Links/Github';
+import WebSite from '../Links/WebSite';
 
 function ProjectsCard({ title, description, techs, links, image }: IProjCard) {
   return (
     <S.Div>
-      <h1>{title}</h1>
-      <img src={image} />
+      <h2>{title}</h2>
+      <S.BgImg src={image} className="img" />
       <S.Infos className="card">
-        <p>{description}</p>
+        <S.Desc>{description}</S.Desc>
+        <h1>Tecnologias utilizadas:</h1>
         <S.Techs>
-          <p>Tecnologias utilizadas:</p>
-          <div>
-            {techs.map((tech, index) => {
-              // eslint-disable-next-line prettier/prettier
+          {techs.map((tech, index) => {
+            // eslint-disable-next-line prettier/prettier
             return <p key={index}>{tech}</p>
-            })}
-          </div>
+          })}
         </S.Techs>
-        <S.Techs>
-          <p>Mais informações: </p>
-          <div>
-            <a href={links.github}>GitHub</a>
-            <a href={links.website}>Web Site</a>
-          </div>
-        </S.Techs>
+        <S.Footer>
+          <h1>Mais informações: </h1>
+          <S.Techs>
+            <div>
+              <Github param={links.github} /> <p>GitHub</p>
+            </div>
+            <div>
+              <WebSite param={links.website} /> <p>WebSite</p>
+            </div>
+          </S.Techs>
+        </S.Footer>
       </S.Infos>
     </S.Div>
   );
