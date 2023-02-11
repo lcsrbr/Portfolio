@@ -13,6 +13,9 @@ import ts from '../../images/ts.png';
 import redux from '../../images/redux.png';
 import rtl from '../../images/rtl.png';
 import styled from '../../images/styled.png';
+import bootstrap from '../../images/bootstrap.svg';
+import express from '../../images/express.svg';
+import sequelize from '../../images/sequelize.svg';
 
 export const techs = [
   { image: css, name: 'CSS' },
@@ -30,6 +33,10 @@ export const techs = [
   { image: redux, name: 'Redux' },
   { image: rtl, name: 'RTL' },
   { image: styled, name: 'Styled Components' },
+  { image: express, name: 'Express.js' },
+  { image: bootstrap, name: 'Bootstrap' },
+  { image: sequelize, name: 'Sequelize.js' },
+  { image: react, name: 'React Native' },
 ];
 
 export const techsGenerator = (param: string[]) => {

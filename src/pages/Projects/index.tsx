@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectsCard from '../../components/ProjectsCard';
 import data from './service';
 import * as S from './styles';
-import { IProjCard } from '../../interfaces';
 function Projects() {
   return (
     <S.Main>

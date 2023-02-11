@@ -11,12 +11,8 @@ export const Main = styled.div`
     width: 50px;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1400px) {
     margin-top: 100px;
-    margin-bottom: 120px;
-  }
-  @media (max-width: 600px) {
-    margin-top: 80px;
     margin-bottom: 120px;
   }
   // height: 80vh;
@@ -45,7 +41,7 @@ export const Container = styled.div`
     flex-direction: column;
     height: 100%;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     height: 100%;
   }
@@ -87,17 +83,25 @@ export const Form = styled.form`
     justify-content: center;
     border: none;
     border-radius: 15px;
-    width: 280px;
-    height: 45px;
+    width: 380px;
+    background-color: ${({ theme }) => theme.background2};
+    color: ${({ theme }) => theme.font2};
+
+    @media (max-width: 1000px) {
+      width: 280px;
+    }
+    height: 50px;
     transition: 0.3s;
+    background-color: ${({ theme }) => theme.font3};
   }
 
   input:focus,
   textarea:focus,
   button:hover,
   button:focus {
-    background-color: ${({ theme }) => theme.background2};
     box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}5f;
+    background-color: ${({ theme }) => theme.font1};
+    box-shadow: 0 0 0 5px ${({ theme }) => theme.background2};
     color: #fff;
   }
 

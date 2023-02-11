@@ -20,14 +20,14 @@ function ProjectsCard({ title, description, techs, links, image }: IProjCard) {
         </S.Techs>
         <S.Footer>
           <h1>Mais informações: </h1>
-          <S.Techs>
+          <S.Links>
             <div>
               <Github param={links.github} /> <p>GitHub</p>
             </div>
             <div>
               <WebSite param={links.website} /> <p>WebSite</p>
             </div>
-          </S.Techs>
+          </S.Links>
         </S.Footer>
       </S.Infos>
     </S.Div>

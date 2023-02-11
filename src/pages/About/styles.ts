@@ -80,9 +80,12 @@ export const Techs = styled.div`
   width: 100%;
   color: white;
   text-align: center;
-  color: ${({ theme }) => theme.font1};
-
+  color: ${({ theme }) => theme.font2};
   section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: ${({ theme }) => theme.font3};
+    border-radius: 15px 15px 5px 5px;
     scroll-behavior: auto;
     scroll-behavior: smooth;
     width: 100%;
@@ -90,13 +93,13 @@ export const Techs = styled.div`
     display: flex;
     // justify-content: center;
     align-items: center;
-    overflow-x: scroll;
     height: 130px;
-    overflow-y: hidden;
     p {
       text-align: justify;
-      color: ${({ theme }) => theme.font2};
+      color: #fff;
     }
+    overflow-x: scroll;
+    overflow-y: hidden;
     ::-webkit-scrollbar {
       height: 5px;
     }

@@ -2,6 +2,10 @@ import { techsGenerator } from '../../components/Technologies/services';
 import tfc from '../../images/tfc.png';
 import todo from '../../images/todo.png';
 import trybewallet from '../../images/trybewallet.png';
+import trybetunes from '../../images/trybetunes.png';
+import trivia from '../../images/trivia.png';
+import recipes from '../../images/recipes.png';
+import todoNative from '../../images/todoNative.png';
 
 export default [
   {
@@ -17,10 +21,29 @@ export default [
     image: todo,
   },
   {
+    title: 'Todo List Native',
+    description:
+      'Um aplicativo de lista de tarefas simples feita em React Native.',
+    techs: techsGenerator(['React Native', 'JavaScript', 'HTML', 'CSS']),
+    links: {
+      github: 'https://github.com/lcsrbr/todo-native',
+      website:
+        'https://codesandbox.io/s/misty-river-if9ms1?file=/src/App.js&resolutionWidth=320&resolutionHeight=675',
+    },
+    image: todoNative,
+  },
+  {
     title: 'Trybe Wallet',
     description:
       'Aplicativo para controle de despesas, e conversão das principais moedas.',
-    techs: techsGenerator(['JavaScript', 'CSS', 'HTML', 'Bootstrap', 'Redux']),
+    techs: techsGenerator([
+      'React.js',
+      'JavaScript',
+      'CSS',
+      'HTML',
+      'Bootstrap',
+      'Redux',
+    ]),
 
     links: {
       github: 'https://github.com/lcsrbr/TrybeWallet',
@@ -34,12 +57,13 @@ export default [
       'Site com o objetivo de reunir as informações de um campeonato de Futebol! Acompanhe os placares, pontuações, adicionar e remover partidas.',
     techs: techsGenerator([
       'JavaScript',
-      'Node.JS',
-      'Express',
+      'Node.js',
+      'Express.js',
       'TypeScript',
       'MySQL',
       'Docker',
-      'Sequelize',
+      'Sequelize.js',
+      'React.js',
     ]),
 
     links: {
@@ -47,5 +71,62 @@ export default [
       website: 'https://frontend-production-5124.up.railway.app/leaderboard',
     },
     image: tfc,
+  },
+  {
+    title: 'TrybeTunes',
+    description:
+      'Uma aplicação de música, onde é possível buscar por artista, selecionar álbum, e gerenciar suas músicas favoritas!.',
+    techs: techsGenerator([
+      'React.js',
+      'JavaScript',
+      'CSS',
+      'HTML',
+      'Bootstrap',
+      'Redux',
+    ]),
+
+    links: {
+      github: 'https://github.com/lcsrbr/TrybeTunes',
+      website: 'https://trybe-tunes-blond.vercel.app/',
+    },
+    image: trybetunes,
+  },
+  {
+    title: 'Trivia',
+    description:
+      'Uma aplicação do clássico jogo de Trivia! É possível se cadastrar, jogar e comparar o placar com os seus amigos!',
+    techs: techsGenerator([
+      'React.js',
+      'JavaScript',
+      'CSS',
+      'HTML',
+      'Bootstrap',
+      'Redux',
+    ]),
+
+    links: {
+      github: 'https://github.com/lcsrbr/Trivia-',
+      website: 'https://trivia-nu-gilt.vercel.app/',
+    },
+    image: trivia,
+  },
+  {
+    title: 'Recipes App',
+    description:
+      'Um aplicativo de receitas completo, onde é possível se cadastrar, selecionar alguma receita (comidas e bebidas), acompanhar seu progresso, favoritar receitas e compartilhar!',
+    techs: techsGenerator([
+      'React.js',
+      'JavaScript',
+      'CSS',
+      'HTML',
+      'Bootstrap',
+      'Redux',
+    ]),
+
+    links: {
+      github: 'https://github.com/lcsrbr/recipesApp',
+      website: 'https://recipes-app-red.vercel.app/',
+    },
+    image: recipes,
   },
 ];

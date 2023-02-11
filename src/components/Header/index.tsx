@@ -21,10 +21,10 @@ function Header() {
     const localParse = lcSt && JSON.parse(lcSt);
     const light = {
       theme: 'light',
-      background2: '#9f4fa3',
-      background1: '#d4ccd6',
-      font1: '#020122',
-      font3: '#0a0613',
+      background2: '#b19cd9',
+      background1: '#fff',
+      font1: '#000',
+      font3: '#b19cd9',
       font2: '#130c25',
     };
 
@@ -32,7 +32,7 @@ function Header() {
       theme: 'dark',
       font1: '#9f4fa3',
       font2: '#d4ccd6',
-      font3: '#020122',
+      font3: '#130c25',
       background1: '#0a0613',
       background2: '#130c25',
     };

@@ -4,7 +4,7 @@ const TechDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: baseline;
+  justify-content: center;
   text-align: center;
   gap: 1rem;
   width: 80px;
@@ -13,6 +13,7 @@ const TechDiv = styled.div`
     width: 50px;
   }
   p {
+    text-align: center !important;
     color: white;
     display: flex;
     align-items: center;

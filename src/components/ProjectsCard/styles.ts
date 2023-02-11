@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Div = styled.div`
 h2 {
   margin: 8px;
+  color: ${({ theme }) => theme.font1};
 }
 @media screen and (max-width: 500px) {
   width: 300px;
   height: 150px;
 }
-
 .card {
   @media screen and (max-width: 500px) {
     position: fixed;
@@ -34,10 +34,7 @@ h2 {
         box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}9f;
       }
   }
-  border-radius: 10px;
-
-
-
+  border-radius: 10px;  
 `;
 
 export const Infos = styled.div`
@@ -52,7 +49,6 @@ export const Infos = styled.div`
   gap: 1rem;
   padding: 10px;
   border-radius: 10px;
-  justify-content: space-between;
   @media screen and (max-width: 500px) {
     font-size: 1.4rem;
   }
@@ -64,24 +60,47 @@ export const Desc = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 `;
 
 export const Techs = styled.div`
   display: flex;
-  div {
-    display: flex;
-    flex-direction: column;
-    p {
-      font-size: 8px;
-    }
+  width: 100%;
+  p {
+    font-size: 10px;
   }
+  img {
+    width: 25px;
+  }
+
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  ::-webkit-scrollbar {
+    height: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.font1}9f;
+    border-radius: 12px;
+  }
+`;
+
+export const Links = styled.div`
+  display: flex;
+  width: 100%;
+  p {
+    font-size: 10px;
+  }
+  img {
+    width: 25px;
+  }
+
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  img {
-    width: 30px;
-  }
 `;
 
 export const BgImg = styled.img`
@@ -95,9 +114,10 @@ export const BgImg = styled.img`
     width: 300px;
     height: 150px;
   }
+  box-shadow: 0 0 0 5px ${({ theme }) => theme.font3}5f;
 `;
 
 export const Footer = styled.div`
   position: relative;
-  bottom: 0;
+  padding-bottom: 3px;
 `;
