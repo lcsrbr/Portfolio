@@ -1,22 +1,8 @@
 import React from 'react';
 import * as S from './styles';
 import img from '../../images/foto.jpeg';
-import css from '../../images/css.svg';
-import docker from '../../images/docker.png';
-import github from '../../images/github.svg';
-import html from '../../images/html.svg';
-import jest from '../../images/jest.png';
-import js from '../../images/js.svg';
-import linux from '../../images/linux.png';
-import mongo from '../../images/mongo.png';
-import mysql from '../../images/mysql.png';
-import node from '../../images/node.png';
-import react from '../../images/react.png';
-import redux from '../../images/redux.png';
-import rtl from '../../images/rtl.png';
-import styled from '../../images/styled.png';
-import ts from '../../images/ts.png';
 import TechDiv from '../../components/Technologies';
+import { techs } from '../../components/Technologies/services';
 
 function About() {
   return (
@@ -56,21 +42,9 @@ function About() {
         <S.Techs>
           <h1>Tecnologias</h1>
           <section>
-            <TechDiv img={css} title="Css" />
-            <TechDiv img={docker} title="Docker" />
-            <TechDiv img={github} title="Github" />
-            <TechDiv img={html} title="HTML" />
-            <TechDiv img={jest} title="Jest" />
-            <TechDiv img={js} title="JavaScript" />
-            <TechDiv img={linux} title="Linux" />
-            <TechDiv img={mongo} title="Mongo" />
-            <TechDiv img={mysql} title="MySQL" />
-            <TechDiv img={node} title="Node.JS" />
-            <TechDiv img={react} title="React.JS" />
-            <TechDiv img={redux} title="Redux" />
-            <TechDiv img={rtl} title="RTL" />
-            <TechDiv img={styled} title="Styled Components" />
-            <TechDiv img={ts} title="TypeScript" />
+            {techs.map((tech: any, index: any) => {
+              return <TechDiv key={index} img={tech.image} title={tech.name} />;
+            })}
           </section>
         </S.Techs>
       </S.Container>

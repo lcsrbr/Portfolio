@@ -1,8 +1,9 @@
 import React from 'react';
 import * as S from './styles';
-import { IProjCard } from '../../interfaces';
+import { IProjCard, ITechs } from '../../interfaces';
 import Github from '../Links/Github';
 import WebSite from '../Links/WebSite';
+import TechDiv from '../../components/Technologies';
 
 function ProjectsCard({ title, description, techs, links, image }: IProjCard) {
   return (
@@ -13,9 +14,8 @@ function ProjectsCard({ title, description, techs, links, image }: IProjCard) {
         <S.Desc>{description}</S.Desc>
         <h1>Tecnologias utilizadas:</h1>
         <S.Techs>
-          {techs.map((tech, index) => {
-            // eslint-disable-next-line prettier/prettier
-            return <p key={index}>{tech}</p>
+          {techs.map((tech: any, index: any) => {
+            return <TechDiv key={index} img={tech.image} title={tech.name} />;
           })}
         </S.Techs>
         <S.Footer>

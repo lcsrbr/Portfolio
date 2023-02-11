@@ -1,3 +1,4 @@
+import { techsGenerator } from '../../components/Technologies/services';
 import tfc from '../../images/tfc.png';
 import todo from '../../images/todo.png';
 import trybewallet from '../../images/trybewallet.png';
@@ -7,8 +8,7 @@ export default [
     title: 'Todo List App',
     description:
       'Uma aplicação de lista de tarefas, onde é possivel adicionar, remover, modificar, marcar, entre outras funcionalidades.',
-
-    techs: ['JavaScript', 'CSS', 'HTML', 'Bootstrap'],
+    techs: techsGenerator(['JavaScript', 'CSS', 'HTML', 'Bootstrap']),
 
     links: {
       github: 'https://github.com/lcsrbr/todo-list',
@@ -20,7 +20,7 @@ export default [
     title: 'Trybe Wallet',
     description:
       'Aplicativo para controle de despesas, e conversão das principais moedas.',
-    techs: ['JavaScript', 'CSS', 'HTML', 'Bootstrap', 'Redux'],
+    techs: techsGenerator(['JavaScript', 'CSS', 'HTML', 'Bootstrap', 'Redux']),
 
     links: {
       github: 'https://github.com/lcsrbr/TrybeWallet',
@@ -32,7 +32,7 @@ export default [
     title: 'Trybe Futebol Clube',
     description:
       'Site com o objetivo de reunir as informações de um campeonato de Futebol! Acompanhe os placares, pontuações, adicionar e remover partidas.',
-    techs: [
+    techs: techsGenerator([
       'JavaScript',
       'Node.JS',
       'Express',
@@ -40,7 +40,7 @@ export default [
       'MySQL',
       'Docker',
       'Sequelize',
-    ],
+    ]),
 
     links: {
       github: 'https://github.com/lcsrbr/TrybeFutebolClube',
