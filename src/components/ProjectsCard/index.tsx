@@ -1,13 +1,13 @@
 import React from 'react';
 import * as S from './styles';
-import { IProjCard, ITechs } from '../../interfaces';
+import { IProjCard } from '../../interfaces';
 import Github from '../Links/Github';
 import WebSite from '../Links/WebSite';
 import TechDiv from '../../components/Technologies';
-
 function ProjectsCard({ title, description, techs, links, image }: IProjCard) {
+  const [toggle, setToggle] = React.useState(false);
   return (
-    <S.Div>
+    <S.Div active={toggle} onClick={() => setToggle(!toggle)}>
       <h2>{title}</h2>
       <S.BgImg src={image} className="img" />
       <S.Infos className="card">

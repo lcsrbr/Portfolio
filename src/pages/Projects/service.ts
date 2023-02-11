@@ -113,7 +113,7 @@ export default [
   {
     title: 'Recipes App',
     description:
-      'Um aplicativo de receitas completo, onde é possível se cadastrar, selecionar alguma receita (comidas e bebidas), acompanhar seu progresso, favoritar receitas e compartilhar!',
+      'Um aplicativo de receitas completo, onde é possível iniciar receitas, acompanhar seu progresso, favoritar e compartilhar!',
     techs: techsGenerator([
       'React.js',
       'JavaScript',
