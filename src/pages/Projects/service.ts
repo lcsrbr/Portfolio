@@ -6,6 +6,7 @@ import trybetunes from '../../images/trybetunes.png';
 import trivia from '../../images/trivia.png';
 import recipes from '../../images/recipes.png';
 import todoNative from '../../images/todoNative.png';
+import carshop from '../../images/carshop.png';
 
 export default [
   {
@@ -128,5 +129,18 @@ export default [
       website: 'https://recipes-app-red.vercel.app/',
     },
     image: recipes,
+  },
+  {
+    title: 'Car Shop',
+    description:
+      'API REST CRUD construída em POO para gerenciar uma concessionária de veículos, utilizando o banco de dados MongoDB através do framework do Mongoose.',
+    techs: techsGenerator(['TypeScript', 'MongoDB', 'Mongoose', 'Docker']),
+
+    links: {
+      github: 'https://github.com/lcsrbr/carShop',
+      website:
+        'https://documenter.getpostman.com/view/25807192/2s935uG1ML#f225194f-2809-4cbb-80d7-fb4dca32185d',
+    },
+    image: carshop,
   },
 ];

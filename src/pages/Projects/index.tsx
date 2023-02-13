@@ -3,6 +3,12 @@ import ProjectsCard from '../../components/ProjectsCard';
 import data from './service';
 import * as S from './styles';
 function Projects() {
+  data.sort((a, b): any => {
+    if (a.title < b.title) {
+      return -1;
+    }
+  });
+
   return (
     <S.Main>
       <S.Container>

@@ -16,10 +16,12 @@ import styled from '../../images/styled.png';
 import bootstrap from '../../images/bootstrap.svg';
 import express from '../../images/express.svg';
 import sequelize from '../../images/sequelize.svg';
+import mongoose from '../../images/mongoose.svg';
 
 export const techs = [
   { image: css, name: 'CSS' },
   { image: docker, name: 'Docker' },
+  { image: mongoose, name: 'Mongoose' },
   { image: github, name: 'GitHub' },
   { image: html, name: 'HTML' },
   { image: jest, name: 'Jest' },

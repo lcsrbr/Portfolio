@@ -5,6 +5,12 @@ import TechDiv from '../../components/Technologies';
 import { techs } from '../../components/Technologies/services';
 
 function About() {
+  techs.sort((a, b): any => {
+    if (a.name < b.name) {
+      return -1;
+    }
+  });
+
   return (
     <S.Main>
       <S.Container>
