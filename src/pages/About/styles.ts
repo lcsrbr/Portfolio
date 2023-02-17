@@ -74,6 +74,10 @@ export const Main = styled.div`
     margin-top: 70px;
     margin-bottom: 100px;
   }
+  @media screen and (max-height: 780px) {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
 `;
 
 export const Techs = styled.div`
