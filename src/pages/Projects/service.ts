@@ -8,6 +8,7 @@ import recipes from '../../images/recipes.png';
 import todoNative from '../../images/todoNative.png';
 import carshop from '../../images/carshop.png';
 import jobInsights from '../../images/jobInsights.png';
+import deliveryApp from '../../images/deliveryApp.png';
 
 export default [
   {
@@ -66,6 +67,7 @@ export default [
       'Docker',
       'Sequelize.js',
       'React.js',
+      'Railway',
     ]),
 
     links: {
@@ -155,5 +157,26 @@ export default [
       website: 'https://github.com/lcsrbr/python-job-insights',
     },
     image: jobInsights,
+  },
+  {
+    title: 'Delivery App',
+    description:
+      'Projeto Full Stack de um aplicativo de entrega, onde é possível se cadastrar, fazer pedidos, acompanhar o status do pedido, entre outras funcionalidades.',
+    techs: techsGenerator([
+      'JavaScript',
+      'Node.js',
+      'Express.js',
+      'MySQL',
+      'Docker',
+      'Sequelize.js',
+      'React.js',
+      'Railway',
+    ]),
+
+    links: {
+      github: 'https://github.com/lcsrbr/deliveryApp',
+      website: 'https://secretive-writer-production.up.railway.app/login',
+    },
+    image: deliveryApp,
   },
 ];

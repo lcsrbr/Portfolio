@@ -29,7 +29,7 @@ h2 {
     transform: translate(-50%, 0);
     width: 90%;
     height: 95vh;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     z-index: 5;
 
   }
@@ -41,7 +41,7 @@ h2 {
 
   :hover {
     .img {
-      filter: blur(5px);
+      filter: blur(10px);
     }
     .card {
       display: flex;

@@ -20,6 +20,7 @@ import mongoose from '../../images/mongoose.svg';
 import flask from '../../images/flask.svg';
 import python from '../../images/python.svg';
 import pytest from '../../images/pytest.svg';
+import railway from '../../images/railway.png';
 
 export const techs = [
   { image: css, name: 'CSS' },
@@ -45,6 +46,7 @@ export const techs = [
   { image: python, name: 'Python' },
   { image: pytest, name: 'Pytest' },
   { image: flask, name: 'Flask' },
+  { image: railway, name: 'Railway' },
 ];
 
 export const techsGenerator = (param: string[]) => {
