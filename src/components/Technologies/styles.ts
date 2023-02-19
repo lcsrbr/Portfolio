@@ -9,6 +9,8 @@ const TechDiv = styled.div`
   gap: 1rem;
   width: 80px;
   height: 80px;
+  filter: ${({ theme }) =>
+    theme.theme === 'dark' ? `invert(0)` : `invert(90%)`};
   img {
     width: 50px;
   }

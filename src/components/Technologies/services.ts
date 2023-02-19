@@ -48,6 +48,5 @@ export const techs = [
 ];
 
 export const techsGenerator = (param: string[]) => {
-  console.log(param);
   return techs.filter(a => param.includes(a.name));
 };
