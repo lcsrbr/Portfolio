@@ -133,8 +133,21 @@ export default [
   {
     title: 'Car Shop',
     description:
-      'API REST CRUD construída em POO para gerenciar uma concessionária de veículos, utilizando o banco de dados MongoDB através do framework do Mongoose.',
+      'API REST CRUD construída em POO com a finalidade de gerenciar uma concessionária de veículos, utilizando o banco de dados MongoDB através do framework do Mongoose.',
     techs: techsGenerator(['TypeScript', 'MongoDB', 'Mongoose', 'Docker']),
+
+    links: {
+      github: 'https://github.com/lcsrbr/carShop',
+      website:
+        'https://documenter.getpostman.com/view/25807192/2s935uG1ML#f225194f-2809-4cbb-80d7-fb4dca32185d',
+    },
+    image: carshop,
+  },
+  {
+    title: 'Job Insights',
+    description:
+      'Análises feitas a partir de um conjunto de dados sobre empregos e incorporadas a um aplicativo Web. Os testes foram feitos como garantia de melhor implementação da aplicação.',
+    techs: techsGenerator(['Python', 'Pytest', 'Flask']),
 
     links: {
       github: 'https://github.com/lcsrbr/carShop',

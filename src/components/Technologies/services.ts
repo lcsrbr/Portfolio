@@ -17,6 +17,9 @@ import bootstrap from '../../images/bootstrap.svg';
 import express from '../../images/express.svg';
 import sequelize from '../../images/sequelize.svg';
 import mongoose from '../../images/mongoose.svg';
+import flask from '../../images/flask.svg';
+import python from '../../images/python.svg';
+import pytest from '../../images/pytest.svg';
 
 export const techs = [
   { image: css, name: 'CSS' },
@@ -39,6 +42,9 @@ export const techs = [
   { image: bootstrap, name: 'Bootstrap' },
   { image: sequelize, name: 'Sequelize.js' },
   { image: react, name: 'React Native' },
+  { image: python, name: 'Python' },
+  { image: pytest, name: 'Pytest' },
+  { image: flask, name: 'Flask' },
 ];
 
 export const techsGenerator = (param: string[]) => {
