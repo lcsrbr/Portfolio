@@ -27,6 +27,9 @@ export const Header = styled.header`
 `;
 
 export const Nav = styled.div<{ open: boolean }>`
+display: flex;
+gap: 1rem;
+
   button {
     border: none;
     background-color: transparent;

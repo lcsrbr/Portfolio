@@ -70,8 +70,11 @@ function Header() {
       <Link to="/">
         <h1>{'<LucasMoura/>'}</h1>
       </Link>
-
       <S.Nav open={toggle}>
+        <S.Switch className="switch" onClick={() => handleTheme()}>
+          <input type="checkbox" checked={theme} />
+          <span className="slider round"></span>
+        </S.Switch>
         <button onClick={handleButton} className={animated}>
           <div className="bar1"></div>
           <div className="bar2"></div>
@@ -90,10 +93,6 @@ function Header() {
           <Link to="/contact" onClick={() => handleButton()}>
             Contato
           </Link>
-          <S.Switch className="switch" onClick={() => handleTheme()}>
-            <input type="checkbox" checked={theme} />
-            <span className="slider round"></span>
-          </S.Switch>
         </nav>
       </S.Nav>
     </S.Header>

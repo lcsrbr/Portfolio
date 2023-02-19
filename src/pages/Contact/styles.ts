@@ -25,6 +25,8 @@ export const Links = styled.div`
   a {
     img {
       width: 30px;
+      filter: ${({ theme }) =>
+        theme.theme === 'dark' ? `invert(0)` : `invert(90%)`};
     }
   }
 }
