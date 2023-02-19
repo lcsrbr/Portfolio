@@ -86,6 +86,10 @@ export const Techs = styled.div`
   text-align: center;
   color: ${({ theme }) => theme.font2};
   section {
+    //   div {
+    //     filter: ${({ theme }) =>
+      theme.theme === 'dark' ? `invert(0)` : `invert(90%)`};
+    //   }
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: ${({ theme }) => theme.font3};

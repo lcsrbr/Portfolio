@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Div = styled.div<{ active?: boolean }>`
+color: ${({ theme }) => theme.font2};
+
 h2 {
   margin: 8px;
   color: ${({ theme }) => theme.font1};
@@ -97,7 +99,6 @@ export const Techs = styled.div`
   img {
     width: 25px;
   }
-
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -121,6 +122,8 @@ export const Links = styled.div`
   }
   img {
     width: 25px;
+    filter: ${({ theme }) =>
+      theme.theme === 'dark' ? `invert(0)` : `invert(90%)`};
   }
 
   gap: 1rem;

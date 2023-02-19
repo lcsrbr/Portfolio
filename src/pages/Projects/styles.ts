@@ -17,23 +17,10 @@ export const Container = styled.section`
   margin-top: 5rem;
   display: flex;
   align-items: center;
-  // flex-direction: column;
   margin-bottom: 70px;
-  // height: 100%
-
   flex-wrap: wrap;
 
   justify-content: center;
   gap: 5rem;
   width: 100%;
-  //   max-width: 1000px;
-  // overflow-x: hidden;
-  // overflow-y: auto;
-  // ::-webkit-scrollbar {
-  //   width: 5px;
-  // }
-  // ::-webkit-scrollbar-thumb {
-  //   background: ${({ theme }) => theme.font2};
-  //   border-radius: 12px;
-  // }
 `;
