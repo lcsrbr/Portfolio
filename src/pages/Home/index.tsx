@@ -19,10 +19,8 @@ function Home() {
           </p>
           <p className=" input line-1 anim-typewriter">Desenvolvedor Web. </p>
           <S.Paragraph>
-            Meu desejo é unir minhas experiências passadas com essa poderosa
-            ferramenta que é o Desenvolvimento Web. Enquanto programador eu
-            ajudo as pessoas a encontrarem a melhor solução para os problemas
-            atuais e que ainda irão surgir.
+            Enquanto programador eu ajudo as pessoas a encontrarem a melhor
+            solução para os problemas atuais e que ainda irão surgir.
           </S.Paragraph>
           <S.ButtonDiv>
             <a
