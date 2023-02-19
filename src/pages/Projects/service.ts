@@ -7,6 +7,7 @@ import trivia from '../../images/trivia.png';
 import recipes from '../../images/recipes.png';
 import todoNative from '../../images/todoNative.png';
 import carshop from '../../images/carshop.png';
+import jobInsights from '../../images/jobInsights.png';
 
 export default [
   {
@@ -150,10 +151,9 @@ export default [
     techs: techsGenerator(['Python', 'Pytest', 'Flask']),
 
     links: {
-      github: 'https://github.com/lcsrbr/carShop',
-      website:
-        'https://documenter.getpostman.com/view/25807192/2s935uG1ML#f225194f-2809-4cbb-80d7-fb4dca32185d',
+      github: 'https://github.com/lcsrbr/python-job-insights',
+      website: 'https://github.com/lcsrbr/python-job-insights',
     },
-    image: carshop,
+    image: jobInsights,
   },
 ];
