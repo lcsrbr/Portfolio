@@ -12,6 +12,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../src/redux/store';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/globalStyles';
+import Admin from './pages/Admin';
+import NotFound from './pages/NotFound';
 
 function App() {
   const colors = useSelector(({ theme }: RootState) => theme.theme);
@@ -30,9 +32,11 @@ function App() {
           >
             <Switch location={location}>
               <Route exact path="/" component={Home} />
+              <Route exact path="/admin" component={Admin} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/projects" component={Projects} />
+              <Route path="*" component={NotFound} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
