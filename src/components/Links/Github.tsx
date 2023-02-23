@@ -1,5 +1,5 @@
 import React from 'react';
-import github from '../../images/github.svg';
+import github from '../../images/icons/github.svg';
 
 function Github({ param = 'https://github.com/lcsrbr' }: any) {
   return (

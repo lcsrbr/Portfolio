@@ -1,5 +1,5 @@
 import React from 'react';
-import www from '../../images/www.png';
+import www from '../../images/icons/www.png';
 
 function WebSite({ param }: any) {
   return (

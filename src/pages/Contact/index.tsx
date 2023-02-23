@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-import punch from '../../images/punch.png';
+import punch from '../../images/me/punch.png';
 import Linkedin from '../../components/Links/Linkedin';
 import Github from '../../components/Links/Github';
 import Gmail from '../../components/Links/Gmail';

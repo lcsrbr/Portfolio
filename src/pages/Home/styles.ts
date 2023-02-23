@@ -60,7 +60,7 @@ export const ButtonDiv = styled.div`
 
   a:hover {
     background-color: ${({ theme }) => theme.font1};
-    box-shadow: 0 0 0 5px ${({ theme }) => theme.background2};
+    box-shadow: 0 0 0 5px ${({ theme }) => theme.border};
     color: #fff;
   }
 `;

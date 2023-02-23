@@ -13,11 +13,9 @@ h2 {
 
 }
 .card {
-  background-color: ${({ theme }) => theme.font3};
+  // background-color: ${({ theme }) => theme.font3};
   background-color: ${({ theme }) => theme.background2}9a;
-  :hover {
-    box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}9f;
-  }
+  box-shadow: 0 0 0 5px ${({ theme }) => theme.border};
   ${({ active }) =>
     active &&
     `
@@ -46,9 +44,6 @@ h2 {
     .card {
       display: flex;
       background-color: ${({ theme }) => theme.font3}9f;
-      :hover {
-        box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}9f;
-      }
   }
 }
   border-radius: 10px;  
@@ -142,7 +137,8 @@ export const BgImg = styled.img`
     width: 300px;
     height: 150px;
   }
-  box-shadow: 0 0 0 5px ${({ theme }) => theme.font3}5f;
+  box-shadow: 0 0 0 5px
+    ${({ theme }) => (theme.theme === 'light' ? theme.border : 'none')};
 `;
 
 export const Footer = styled.div`

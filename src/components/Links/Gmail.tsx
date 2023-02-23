@@ -1,5 +1,5 @@
 import React from 'react';
-import gmail from '../../images/gmail.png';
+import gmail from '../../images/icons/gmail.png';
 
 function Gmail() {
   return (

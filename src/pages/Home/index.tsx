@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import lucasImg from '../../images/emoji.png';
-import hi from '../../images/hi.png';
+import lucasImg from '../../images/me/emoji.png';
+import hi from '../../images/me/hi.png';
 import curriculo from '../../images/curriculo.pdf';
 import * as S from './styles';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import linkedin from '../../images/linkedin.svg';
+import linkedin from '../../images/icons/linkedin.svg';
 
 function Linkedin() {
   return (

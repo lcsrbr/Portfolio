@@ -6,14 +6,24 @@ export const ImgText = styled.section`
   justify-content: center;
   gap: 3rem;
   width: 100%;
-  img {
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}5f;
-  }
+  // img {
+  //   width: 300px;
+  //   border-radius: 50%;
+  //   box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}5f;
+  // }
   @media screen and (max-width: 1050px) {
     flex-direction: column;
   }
+`;
+
+export const Img = styled.div`
+  min-width: 300px;
+  min-height: 300px;
+  background-image: url(${({ theme }) => theme.img});
+  background-size: cover;
+  background-width: 300px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 5px ${({ theme }) => theme.border};
 `;
 
 export const Container = styled.div`

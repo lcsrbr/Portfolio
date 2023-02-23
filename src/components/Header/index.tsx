@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import colors from '../../styles/colors';
 import * as S from './styles';
 import { useDispatch } from 'react-redux';
 import { theme as reduxTheme } from '../../redux/reducer/theme';
+import { light, dark } from '../../styles/theme';
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -19,23 +19,6 @@ function Header() {
   const handleTheme = () => {
     const lcSt = localStorage.getItem('theme');
     const localParse = lcSt && JSON.parse(lcSt);
-    const light = {
-      theme: 'light',
-      background2: '#b19cd9',
-      background1: '#fff',
-      font1: '#000',
-      font3: '#b19cd9',
-      font2: '#130c25',
-    };
-
-    const dark = {
-      theme: 'dark',
-      font1: '#9f4fa3',
-      font2: '#d4ccd6',
-      font3: '#130c25',
-      background1: '#0a0613',
-      background2: '#130c25',
-    };
 
     if (lcSt && localParse.theme === 'dark') {
       dispatch(reduxTheme(light));
@@ -55,8 +38,8 @@ function Header() {
 
     console.log(lcSt);
     if (!lcSt) {
-      dispatch(reduxTheme(colors));
-      localStorage.setItem('theme', JSON.stringify(colors));
+      dispatch(reduxTheme(dark));
+      localStorage.setItem('theme', JSON.stringify(dark));
     } else {
       dispatch(reduxTheme(themeLcSt));
     }
@@ -71,10 +54,7 @@ function Header() {
         <h1>{'<LucasMoura/>'}</h1>
       </Link>
       <S.Nav open={toggle}>
-        <S.Switch className="switch" onClick={() => handleTheme()}>
-          <input type="checkbox" checked={theme} />
-          <span className="slider round"></span>
-        </S.Switch>
+        <S.Switch onClick={() => handleTheme()} />
         <button onClick={handleButton} className={animated}>
           <div className="bar1"></div>
           <div className="bar2"></div>

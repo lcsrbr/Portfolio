@@ -104,68 +104,18 @@ gap: 1rem;
   }
 `;
 
-export const Switch = styled.button`
+export const Switch = styled.div`
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 51px;
     height: 24px;
-  }
-
-input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: ${({ theme }) => theme.font2};};
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: '🌚';
-    text-shadow: 2px 2px 5px #000000;
-    text-align: center;
-    font-size: 25px;
-    // height: 26px;
-    // width: 26px;
-    left: -5px;
-    bottom: -3px;
-    // background-color: white;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  input:checked + .slider {
-    background-color: ${({ theme }) => theme.font1};};
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-    content: '🌝';
-
-  }
-
-  /* Rounded sliders */
-  .slider.round {
+    background-color: ${({ theme }) => theme.font1};
     border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
+    background-image: url(${({ theme }) => theme.moon});
+    background-position: ${({ theme }) =>
+      theme.theme === 'light' ? 'left' : 'right'};
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
   }
 `;

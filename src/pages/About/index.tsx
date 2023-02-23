@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-import img from '../../images/foto.jpeg';
+// import img from '../../images/me/light.jpeg';
 import TechDiv from '../../components/Technologies';
 import { techs } from '../../components/Technologies/services';
 
@@ -15,7 +15,8 @@ function About() {
     <S.Main>
       <S.Container>
         <S.ImgText>
-          <img src={img} alt="lucas pic" />
+          <S.Img />
+          {/* <img src={img} alt="lucas pic" /> */}
           <S.Text>
             <p>
               <span>Meu nome é Lucas, </span>moro em Belo Horizonte (Minas

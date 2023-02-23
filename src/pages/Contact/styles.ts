@@ -101,9 +101,8 @@ export const Form = styled.form`
   textarea:focus,
   button:hover,
   button:focus {
-    box-shadow: 0 0 0 5px ${({ theme }) => theme.font1}5f;
+    box-shadow: 0 0 0 5px ${({ theme }) => theme.border};
     background-color: ${({ theme }) => theme.font1};
-    box-shadow: 0 0 0 5px ${({ theme }) => theme.background2};
     color: #fff;
   }
 

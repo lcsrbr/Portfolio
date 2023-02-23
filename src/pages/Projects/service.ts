@@ -1,14 +1,14 @@
 import { techsGenerator } from '../../components/Technologies/services';
-import tfc from '../../images/tfc.png';
-import todo from '../../images/todo.png';
-import trybewallet from '../../images/trybewallet.png';
-import trybetunes from '../../images/trybetunes.png';
-import trivia from '../../images/trivia.png';
-import recipes from '../../images/recipes.png';
-import todoNative from '../../images/todoNative.png';
-import carshop from '../../images/carshop.png';
-import jobInsights from '../../images/jobInsights.png';
-import deliveryApp from '../../images/deliveryApp.png';
+import tfc from '../../images/projects/tfc.png';
+import todo from '../../images/projects/todo.png';
+import trybewallet from '../../images/projects/trybewallet.png';
+import trybetunes from '../../images/projects/trybetunes.png';
+import trivia from '../../images/projects/trivia.png';
+import recipes from '../../images/projects/recipes.png';
+import todoNative from '../../images/projects/todoNative.png';
+import carshop from '../../images/projects/carshop.png';
+import jobInsights from '../../images/projects/jobInsights.png';
+import deliveryApp from '../../images/projects/deliveryApp.png';
 
 export default [
   {
