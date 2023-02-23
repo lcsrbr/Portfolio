@@ -15,8 +15,12 @@ export const Main = styled.div`
     section {
       display: flex;
       width: 500px;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
+      div {
+        border: 1px solid #000;
+        padding: 2px;
+      }
     }
   }
 `;
