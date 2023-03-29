@@ -72,7 +72,7 @@ export default [
 
     links: {
       github: 'https://github.com/lcsrbr/TrybeFutebolClube',
-      website: 'https://frontend-production-5124.up.railway.app/leaderboard',
+      website: 'https://github.com/lcsrbr/TrybeFutebolClube',
     },
     image: tfc,
   },
@@ -175,7 +175,7 @@ export default [
 
     links: {
       github: 'https://github.com/lcsrbr/deliveryApp',
-      website: 'https://secretive-writer-production.up.railway.app/login',
+      website: 'https://github.com/lcsrbr/deliveryApp',
     },
     image: deliveryApp,
   },
