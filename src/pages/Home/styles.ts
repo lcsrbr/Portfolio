@@ -128,7 +128,7 @@ font-size: 15px;
   }
 
   to {
-    width: 11em;
+    width: 8em;
   }
 }
 

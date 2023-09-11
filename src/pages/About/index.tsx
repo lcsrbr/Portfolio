@@ -32,10 +32,9 @@ function About() {
               clientes.
             </p>
             <p>
-              Vi na área de programação a possibilidade de utilizar
-              as habilidades desenvolvidas nas profissões anteriores
-              para criar soluções sob medida baseadas nos problemas 
-              de mercado.
+              Vi na área de programação a possibilidade de utilizar as
+              habilidades desenvolvidas nas profissões anteriores para criar
+              soluções sob medida baseadas nos problemas de mercado.
             </p>
           </S.Text>
         </S.ImgText>

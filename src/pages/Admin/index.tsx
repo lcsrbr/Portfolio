@@ -1,39 +1,39 @@
-import React, { useState } from 'react';
-import {
-  techs as techArr,
-  techsGenerator,
-} from '../../components/Technologies/services';
-import service from '../Projects/service';
+import React from 'react';
+// import {
+//   techs as techArr,
+//   techsGenerator,
+// } from '../../components/Technologies/services';
+// import service from '../Projects/service';
 import { Main } from './styles';
 
 function Admin() {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [techs, setTechs]: any[] = useState([]);
-  const [github, setGithub] = useState('');
-  const [website, setWebsite] = useState('');
-  const [image, setImage] = useState('');
+  // const [title, setTitle] = useState('');
+  // const [description, setDescription] = useState('');
+  // const [techs, setTechs]: any[] = useState([]);
+  // const [github, setGithub] = useState('');
+  // const [website, setWebsite] = useState('');
+  // const [image, setImage] = useState('');
 
-  const teste = {
-    title,
-    description,
-    techs: techsGenerator(techs),
-    links: {
-      github,
-      website,
-    },
-    image,
-  };
-  console.log(techs);
+  // const teste = {
+  //   title,
+  //   description,
+  //   techs: techsGenerator(techs),
+  //   links: {
+  //     github,
+  //     website,
+  //   },
+  //   image,
+  // };
+  // console.log(techs);
 
-  const handleTechs = (e: any) => {
-    if (e.target.checked) {
-      setTechs([...techs, e.target.name]);
-    } else {
-      const filtered = techs.filter((tech: any) => tech !== e.target.name);
-      setTechs(filtered);
-    }
-  };
+  // const handleTechs = (e: any) => {
+  //   if (e.target.checked) {
+  //     setTechs([...techs, e.target.name]);
+  //   } else {
+  //     const filtered = techs.filter((tech: any) => tech !== e.target.name);
+  //     setTechs(filtered);
+  //   }
+  // };
 
   return (
     <Main>
