@@ -33,7 +33,7 @@ function About() {
             </p>
             <p>
               Vi na área de programação a possibilidade de utilizar
-              minha as habilidades desenvolvidas nas profissões anteriores
+              as habilidades desenvolvidas nas profissões anteriores
               para criar soluções sob medida baseadas nos problemas 
               de mercado.
             </p>
