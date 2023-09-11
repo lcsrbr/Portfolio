@@ -17,11 +17,7 @@ function Home() {
             </S.Span>
             <span>e eu sou</span>
           </p>
-          <p className=" input line-1 anim-typewriter">Desenvolvedor Web. </p>
-          <S.Paragraph>
-            Enquanto programador eu ajudo as pessoas a encontrarem a melhor
-            solução para os problemas atuais e que ainda irão surgir.
-          </S.Paragraph>
+          <p className=" input line-1 anim-typewriter">Desenvolvedor</p>
           <S.ButtonDiv>
             <a
               href={curriculo}

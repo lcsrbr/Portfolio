@@ -22,27 +22,20 @@ function About() {
               <span>Meu nome é Lucas, </span>moro em Belo Horizonte (Minas
               Gerais, Brasil) e sou formado em Administração de Empresas. Sou
               casado, amo música, gatos, jogos e uma boa conversa sobre os mais
-              diversos assuntos. Atualmente estou em migração de carreira,
-              estudando Desenvolvimento Web na Trybe.
+              diversos assuntos.
             </p>
             <p>
               Já trabalhei como call center, vendedor, assistente
               administrativo, e nos últimos sete anos atuei como analista de
               seguros. Por onde passei deixei melhorias e otimizações nas
               rotinas operacionais, além de manter um ótimo contato com os
-              clientes. Vi na área de programação a possibilidade de utilizar
-              minha criatividade, cooperação, curiosidade e foco para criar
-              soluções sob medida baseadas nos problemas de mercado, o que
-              encaixa perfeitamente naquilo que fiz durante toda minha vida
-              profissional.
+              clientes.
             </p>
             <p>
-              Meu desejo é unir minhas experiências passadas com essa poderosa
-              ferramenta que é o Desenvolvimento Web. Acredito que estamos
-              vivendo tempos de grandes mudanças e que é fundamental que as
-              percepções de mundo se atualizem. Enquanto programador eu ajudo as
-              pessoas a encontrarem a melhor solução para os problemas atuais e
-              que ainda irão surgir.
+              Vi na área de programação a possibilidade de utilizar
+              minha as habilidades desenvolvidas nas profissões anteriores
+              para criar soluções sob medida baseadas nos problemas 
+              de mercado.
             </p>
           </S.Text>
         </S.ImgText>
